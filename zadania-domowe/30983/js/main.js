@@ -19,8 +19,12 @@ document.getElementById("oblicz").onclick = () => {
         };
 
         if (uczniowie[index].zajeciaDodatkowe) {
-            if (uczniowie[index].oceny[uczniowie[index].zajeciaDodatkowe] < 6) {
-                uczniowie[index].bonus += 0.5;
+            let zajecia = uczniowie[index].zajeciaDodatkowe.split(', ')
+
+            for (let zajecie in zajecia) {
+                if (uczniowie[index].oceny[zajecia[zajecie]] < 6) {
+                    uczniowie[index].bonus += 0.5;
+                }
             }
         }
 
@@ -30,10 +34,9 @@ document.getElementById("oblicz").onclick = () => {
             if (uczniowie[index].oceny[ocena] <= 1) {
                 item.style.backgroundColor = 'red';
             }
-
         }
+
         uczniowie[index].sredniaOcen = (sumaOcen + uczniowie[index].bonus) / (Object.keys(uczniowie[index].oceny).length);
-        // console.log(uczniowie[index].sredniaOcen);
         item.children[9].textContent = Math.round(uczniowie[index].sredniaOcen * 100) / 100;
 
 
