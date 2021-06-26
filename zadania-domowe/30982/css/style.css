@@ -20,6 +20,10 @@ h3 {
     background-color: white;
 }
 
+#oblicz:hover {
+    cursor: pointer;
+}
+
 #pracownicy {
     margin: auto;
     width: 800px;
