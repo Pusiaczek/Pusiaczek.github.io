@@ -40,6 +40,7 @@ function loopStop() {
 }
 
 
+
 const getData = () => {
     const anime = $('.animation-container');
     const paragraphs = $('p');
@@ -60,6 +61,10 @@ const getData = () => {
     })
 }
 
-setInterval(() => {
-    getData()
-}, 3500)
+window.onscroll = () => scrollToEndOfPage()
+
+const scrollToEndOfPage = () => {
+    if ((document.documentElement.scrollTop + document.documentElement.clientHeight) >= document.documentElement.scrollHeight) {
+        getData();
+    }
+}
