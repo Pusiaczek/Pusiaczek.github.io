@@ -1,0 +1,25 @@
+.nav-bar {
+    
+}
+
+.nav-link.active {
+    font-weight: 600;
+}
+
+.py-60 {
+    padding: 60px 0;
+}
+
+.description__item {
+    padding: 20px 8%;
+}
+
+.our-team__portrait {
+    max-width: 200px;
+}
+
+#signup {
+    background-image: url('../img/slider-1.jpg');
+    background-position: center;
+    background-size: cover;
+}
