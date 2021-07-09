@@ -1,0 +1,62 @@
+// ogolne stylowanie. Typografia, jakies marginesy itp itd
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+p, input, button {
+    font-family: $Roboto;
+    color: $gray-color;
+}
+
+h1, h2, h3, h4 {
+    font-family: $Bellota;
+    color: $purple-color;
+}
+
+h1 {
+    font-size: $page-title-font-size;
+}
+
+
+h2 {
+    font-size: $section-header-font-size;
+}
+
+
+ul {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: $default-font-size;
+    font-weight: 600;
+}
+
+li a {
+    text-transform: uppercase;
+    color: $purple-color;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+@media (min-width: 768px) {
+    .container {
+        width: $container-width;
+        margin: auto;
+    }
+}
