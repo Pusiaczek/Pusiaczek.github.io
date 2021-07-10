@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Projekt HTML + CSS + JS + SASS</title>
+    <script src="https://kit.fontawesome.com/ad74a8bc0d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -34,8 +35,8 @@
                 <h3>SPA & BEAUTY CENTER</h3>
                 <h1>Beauty and success starts here</h1>
                 <p>Together creeping heaven upon third dominion be upon won't darkness rule behold it created good saw after she'd Our set living.</p>
-                <button>Reserve now -></button>
-                <button>Watch our story</button>
+                <button class="sqr-btn">Reserve now -></button>
+                <button class="">Watch our story</button>
 
             </div>
         </div>
@@ -48,7 +49,7 @@
             <h2>Come and you will be inspired!</h2>
             <p>It's the end of summer the sweltering heat makes human sweat in the night and makes the plants and trees wilt even in the moonlit nights. The eastern wind breeze brings an eerie feeling, that the monsoon clouds are soon coming, there is a strange silence in the ears, the sky gets darker and darker.</p>
 
-            <button>READ MORE</button>
+            <button class="btn">READ MORE</button>
         </div>
     </section>
 
@@ -96,29 +97,192 @@
             <h2>Popular Procedures</h2>
             <p>To doesn't his appear replenish together called he of mad polace won't wherein blessed second every wherein were meat kind whereinand martcin</p>
             
-            <div class="popular-procedures__inner">
-                <div class="popular-procedures__item">
-                    <img src="img/procedures-bg-1.jpg" alt="popular-procedures-photo" class="popular-procedures__img">
+            <div class="leaflet-container">
+                <div class="leaflet">
+                    <img src="img/procedures-bg-1.jpg" alt="popular-procedures-photo" class="leaflet-img">
                     <h3>Massage Therapy</h3>
                     <p>Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters frimament place</p>
-                    <button class="popular-procedures__btn">READ MORE</button>
+                    <button class="btn-gray">READ MORE</button>
                 </div>
 
-                <div class="popular-procedures__item">
-                    <img src="img/procedures-bg-2.jpg" alt="popular-procedures-photo" class="popular-procedures__img">
-                    <h3>Massage Therapy</h3>
+                <div class="leaflet">
+                    <img src="img/procedures-bg-2.jpg" alt="popular-procedures-photo" class="leaflet-img">
+                    <h3>Beauty Care</h3>
                     <p>Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters frimament place</p>
-                    <button class="popular-procedures__btn">READ MORE</button>
+                    <button class="btn-gray">READ MORE</button>
                 </div>
 
-                <div class="popular-procedures__item">
-                    <img src="img/procedures-bg-3.jpg" alt="popular-procedures-photo" class="popular-procedures__img">
-                    <h3>Massage Therapy</h3>
+                <div class="leaflet">
+                    <img src="img/procedures-bg-3.jpg" alt="popular-procedures-photo" class="leaflet-img">
+                    <h3>Executive Reflexology</h3>
                     <p>Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters frimament place</p>
-                    <button class="popular-procedures__btn">READ MORE</button>
+                    <button class="btn-gray">READ MORE</button>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="our-team">
+        <div class="container text-center">
+            <h2>Experienced Team</h2>
+            <p>To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin</p>
+
+            <div class="card-container">
+                <div class="card">
+                    <img class="card-img" src="img/team-1.jpg" alt="team-member-photo">
+                    
+                    <div class="card-info-container">
+                        <div class="card-info">
+                            <h3>Jenny Austin</h3>
+                            <p>Thai Message</p>
+                            <div class="card-info-socials">
+                                <i class="fab fa-facebook-f social-media-icon"></i>
+                                <i class="fab fa-twitter social-media-icon"></i>
+                                <i class="fab fa-instagram social-media-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card-img" src="img/team-2.jpg" alt="team-member-photo">
+                    
+                    <div class="card-info-container">
+                        <div class="card-info">
+                            <h3>David Hannan</h3>
+                            <p>Thai Message</p>
+                            <div class="card-info-socials">
+                                <i class="fab fa-facebook-f social-media-icon"></i>
+                                <i class="fab fa-twitter social-media-icon"></i>
+                                <i class="fab fa-instagram social-media-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card-img" src="img/team-3.jpg" alt="team-member-photo">
+
+                    <div class="card-info-container">
+                        <div class="card-info">
+                            <h3>Cheryl Harris</h3>
+                            <p>Thai Message</p>
+                            <div class="card-info-socials">
+                                <i class="fab fa-facebook-f social-media-icon"></i>
+                                <i class="fab fa-twitter social-media-icon"></i>
+                                <i class="fab fa-instagram social-media-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="appointment">
+        <form action="" class="appointment__form">
+            <input type="text" name="name" id="name" placeholder="NAME">
+            <input type="email" name="email" id="email" placeholder="EMAIL ADDRESS">
+            <select name="service" id="service">
+                <!-- <option value="SELECT SERIVE" disabled selected></option> -->
+                <option value="Meassage">Meassage</option>
+                <option value="Spa">Spa</option>
+                <option value="Relax ;)">Relax</option>
+            </select>
+            <input type="tel" name="phone" id="phone" placeholder="PHONE NUMBER">
+            <input type="date" name="date" id="date">
+            <input type="time" name="time" id="time">
+            <textarea name="note" id="note" placeholder="YOUR NOTES"></textarea>
+
+            <input type="submit" class="btn-white" value="MAKE AN APPOINTMENT">
+        </form>
+    </section>
+
+    <section class="blog-news">
+        <div class="container text-center">
+            <h2>Latest From Blog</h2>
+            <p>To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin</p>
+
+            <div class="leaflet-container">
+                <div class="leaflet">
+                    <img src="img/blog-1.jpg" alt="popular-blog-news" class="leaflet-img">
+                    <span>RELAXATION | JULY 03.2019</span>
+                    <h3>Had seed herb grass mids</h3>
+                    <p>She'd yielding seas green appear unto worne</p>
+                    <button class="btn-gray">READ MORE</button>
+                </div>
+
+                <div class="leaflet">
+                    <img src="img/blog-2.jpg" alt="popular-blog-news" class="leaflet-img">
+                    <span>RELAXATION | JULY 03.2019</span>
+                    <h3>Divid image unto creeping</h3>
+                    <p>She'd yielding seas green appear unto worne</p>
+                    <button class="btn-gray">READ MORE</button>
+                </div>
+
+                <div class="leaflet">
+                    <img src="img/blog-3.jpg" alt="popular-blog-news" class="leaflet-img">
+                    <span>RELAXATION | JULY 03.2019</span>
+                    <h3>Had seed herb grass mids</h3>
+                    <p>She'd yielding seas green appear unto worne</p>
+                    <button class="btn-gray">READ MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact text-center">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-row">
+                        <img src="img/icons/icon-map.png" alt="map-icon">
+                        <p>848 E 28TH ST,BROOKLYN <br>NEW YORK, USA</p>
+                    </div>
+
+                    <div class="contact-row">
+                        <img src="img/icons/icon-mail.png" alt="mail-icon">
+                        <p>EXAMPLE@LEOSPA.COM <br> EXAMPLE@LEOSPA.COM</p>
+                    </div>
+                        
+                    <div class="contact-row">
+                        <img src="img/icons/icon-tel.png" alt="phone-icon">
+                        <p>+02 365 2365 3265 (02)<br>+01 365 2365 3265 (04)</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form action="" class="contact-us">
+                        <input type="text" name="name" id="contact-name" placeholder="FIRST NAME">
+                        <input type="email" name="email" id="contact-email" placeholder="EMAIL ADRESS">
+                        <textarea name="comment" id="contact-comment" placeholder="WRITE COMMENT"></textarea>
+                        <input type="submit" value="SUBMIT NOW" class="btn-white">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <a href="#" class="footer-logo">
+                <img src="img/logo-txt.png" alt="spa-logo-with-text" >
+            </a>
+
+            <nav class="footer-navbar">
+                <ul class="navbar__list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <span>© COPYRIGHT 2021</span>
+        </div>
+    </footer>
 </body>
 </html>

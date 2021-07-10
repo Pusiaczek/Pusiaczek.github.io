@@ -63,6 +63,10 @@
 
 
 @media (min-width: 768px) {
+    .gallery {
+        flex-wrap: nowrap;
+    }
+
     .gallery__item {
         position: relative;
         width: 25%;

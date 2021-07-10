@@ -11,31 +11,6 @@
     flex-direction: row;
 }
 
-.navbar__logotxt {
-    max-width: 100px;
-    margin-right: 50px;
-}
-
-.navbar__logotxt img {
-    width: 100%;
-}
-
-
-.navbar {
-    width: 100%;
-    padding-top: 40px;
-}
-
-.navbar__list {
-    list-style-type: none;
-}
-
-
-.navbar__list li {
-    display: inline-block;
-    margin: 0 2%;
-}
-
 
 
 
@@ -44,9 +19,21 @@
         display: inline-block;
         z-index: -1;
         position: absolute;
-        // width: 40%;
-        height: 80vh;
+        width: 40%;
+        // height: 80vh;
         right: 0px;
         
     }
+
+    .navbar {
+        width: 60%;
+    }
+
+    .navbar__list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
 }

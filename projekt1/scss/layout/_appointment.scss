@@ -1,0 +1,104 @@
+.appointment {
+    margin-top: 100px;
+    display: flex;
+    background-color: $blue-color;
+}
+
+
+.appointment__form {
+    width: 90%;
+    margin: auto;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+%appointment-item {
+    padding: 10px;
+    margin: 2%;
+    font-size: $default-font-size * 2;
+    color: white;
+    border: none;
+    border-bottom: 1px white solid;
+    background-color: transparent;
+}
+
+.appointment__form input:not([type="submit"]) {
+    @extend %appointment-item;
+    width: 100%;
+}
+
+.appointment__form input[type="date"],
+.appointment__form input[type="time"] {
+    width: 45%;
+    
+}
+
+.appointment__form input[type="submit"] {
+    margin: 3rem auto;
+}
+
+.appointment__form select {
+    @extend %appointment-item;
+    width: 100%;
+}
+
+.appointment__form textarea {
+    @extend %appointment-item;
+    width: 100%;
+    height: $default-font-size * 4;
+    overflow-y: hidden;
+}
+
+
+.appointment__form input::placeholder,
+.appointment__form textarea::placeholder {
+    color: white;
+    font-size: $default-font-size * 2;
+}
+
+.appointment__form input:focus,
+.appointment__form select:focus,
+.appointment__form textarea:focus
+{
+    outline: none;
+}
+
+
+
+@media (min-width: 769px) {
+    .appointment {
+        background-image: url("../img/contact-bg.jpg");
+        background-position: left;
+        background-size: 40%;
+        background-repeat: no-repeat;
+    }
+    
+    .appointment__form {
+        padding-left: 5%;
+        margin-left: 40%;
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    
+    .appointment__form input:not([type="submit"]) {
+        width: 45%;
+        font-size: $default-font-size;
+    }
+    
+    .appointment__form select {
+        width: 45%;
+        font-size: $default-font-size;
+    }
+    
+    .appointment__form input::placeholder,
+    .appointment__form textarea::placeholder {
+        color: white;
+        font-size: $default-font-size;
+    }
+}

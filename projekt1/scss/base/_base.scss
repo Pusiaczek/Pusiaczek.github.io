@@ -9,9 +9,10 @@
     margin: auto;
 }
 
-p, input, button {
-    font-family: $Roboto;
+p, input {
     color: $gray-color;
+    padding-bottom: 15px;
+    
 }
 
 h1, h2, h3, h4 {
@@ -51,6 +52,8 @@ section {
 .text-center {
     text-align: center;
 }
+
+
 
 
 

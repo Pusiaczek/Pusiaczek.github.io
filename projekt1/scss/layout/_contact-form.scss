@@ -1,0 +1,112 @@
+.contact {
+    background-color: $blue-color;
+    width: 100%;
+}
+
+.contact h2,
+.contact p {
+    color: white;
+    
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.contact-info p {
+    padding: 10px 5%;
+    margin: auto;
+    text-align: left;
+
+}
+
+.contact-row{
+    width: 100%;
+    // padding-left: 25%;
+    // text-align: center;
+}
+
+.contact-info img {
+    // object-fit: contain;
+//     max-height: 2rem;
+    height: 2rem;
+    
+    display: inline-block;
+}
+
+.contact-info p {
+    display: inline-block;
+}
+
+
+.contact-form {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contact-us {
+    width: 100%;
+    font-size: $default-font-size;
+}
+
+.contact-us input:not([type="submit"]),
+.contact-us textarea {
+    background-color: transparent;
+    color: white;
+    border: solid 1px white;
+
+    width: 100%;
+    margin: 1% 0;
+    padding: 2%;
+}
+
+.contact-us textarea {
+    height: 6rem;
+}
+
+.contact-us input:not([type="submit"]):focus,
+.contact-us textarea:focus {
+    outline: none;
+}
+
+
+.contact-us input:not([type="submit"])::placeholder,
+.contact-us textarea::placeholder {
+    color: white;
+}
+
+.contact-us input[type="submit"] {
+
+}
+
+@media (min-width: 768px) {
+    .contact-info,
+    .contact-form {
+        width: 50%;
+    }
+
+    .contact-us input:not([type="submit"]),
+    .contact-us textarea {
+        border: none;
+        border-bottom: 1px white solid;
+
+        width: 100%;
+        margin: 1% 0;
+        padding: 3% 4%;
+    }
+
+}
