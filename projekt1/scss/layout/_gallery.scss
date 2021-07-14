@@ -4,7 +4,6 @@
     margin: auto;
 }
 
-
 .gallery__item {
     position: relative;
     height: 50vh;
@@ -40,6 +39,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-decoration: none;
 
     color: white;
     width: 100%;

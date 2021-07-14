@@ -2,13 +2,18 @@
     margin-top: 100px;
     display: flex;
     background-color: $blue-color;
+    padding: 0;
 }
 
+.validate-info {
+    margin-left: 20px;
+    font-size: 13px;
+    color: red;
+}
 
 .appointment__form {
     width: 90%;
-    margin: auto;
-    
+    margin: 60px auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -32,6 +37,7 @@
 
 .appointment__form input[type="date"],
 .appointment__form input[type="time"] {
+    @extend %appointment-item;
     width: 45%;
     
 }
@@ -52,6 +58,10 @@
     overflow-y: hidden;
 }
 
+.appointment__form option {
+    background-color: $blue-color;
+    
+}
 
 .appointment__form input::placeholder,
 .appointment__form textarea::placeholder {
@@ -66,25 +76,37 @@
     outline: none;
 }
 
+option {
+    background-color: black;
+}
 
 
 @media (min-width: 769px) {
     .appointment {
+        display: flex;
+    }
+
+    .appointment__bg {
+        width: 40%;
         background-image: url("../img/contact-bg.jpg");
-        background-position: left;
-        background-size: 40%;
+        background-position: center;
+        background-size: cover;
         background-repeat: no-repeat;
     }
     
     .appointment__form {
         padding-left: 5%;
-        margin-left: 40%;
-        width: 40%;
+        margin: 60px 0;
+        width: 50%;
+        
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
+    .appointment__form input[type="submit"] {
+        margin: 3rem 0.5rem;
+    }
     
     .appointment__form input:not([type="submit"]) {
         width: 45%;
@@ -100,5 +122,11 @@
     .appointment__form textarea::placeholder {
         color: white;
         font-size: $default-font-size;
+    }
+}
+
+@media (min-width: 1200px) {
+    .appointment__form {
+        width: 40%;
     }
 }

@@ -2,12 +2,26 @@ $gray-color: #30383b;
 $blue-color:#1ba4ce;
 $purple-color:#473452;
 
-$default-font-size: 15px;
-$page-title-font-size: 50px;
-$section-header-font-size: 42px;
-$box-header-font-size: 22px;
 
-$container-width: 60%;
+
+$default-font-size: 16px;
+$navbar-font-size: 15px;
+$section-header-font-size: 42px;
+$main-section-title-font-size: 50px;
+$card-header-font-size: 22px;
+
+
+$container-width-md: 720px;
+$container-width-lg: 1140px;
 
 $Roboto: 'Roboto', sans-serif;
 $Bellota: 'Bellota', cursive;
+
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}

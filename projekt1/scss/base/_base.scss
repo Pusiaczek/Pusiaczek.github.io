@@ -10,8 +10,10 @@
 }
 
 p, input {
+    font-family: $Roboto;
     color: $gray-color;
     padding-bottom: 15px;
+    font-weight: 300;
     
 }
 
@@ -21,29 +23,21 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: $page-title-font-size;
+    font-size: $main-section-title-font-size;
 }
-
 
 h2 {
     font-size: $section-header-font-size;
 }
 
+h3 {
+    font-size: $card-header-font-size;
+}
 
 ul {
     padding: 0;
 }
 
-a {
-    text-decoration: none;
-    font-size: $default-font-size;
-    font-weight: 600;
-}
-
-li a {
-    text-transform: uppercase;
-    color: $purple-color;
-}
 
 section {
     padding: 60px 0;
@@ -56,10 +50,16 @@ section {
 
 
 
-
 @media (min-width: 768px) {
     .container {
-        width: $container-width;
-        margin: auto;
+        width: $container-width-md;
     }
+    
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: $container-width-lg;
+    }
+
 }

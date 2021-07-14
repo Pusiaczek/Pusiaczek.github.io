@@ -1,12 +1,37 @@
-.intro__container {
-    width: 100%;
+.special-btn {
+    color: $purple-color;
+    display: inline-block;
+    line-height: 40px;
+    height: 40px;
+    font-size: 32px;
+    margin: 5px;
 }
+
+.special-btn-icon {
+    display: inline-block;
+    line-height: 40px;
+    // margin-top: 15px;
+}
+
+.special-btn:hover {
+    color: $gray-color;
+    cursor: pointer;
+}
+
+
+
+
 
 
 @media (min-width: 768px){
-    .intro__container {
-        width: 60%;
+    .intro .container {
+        padding-right: $container-width-md * 0.2;
     }
+
 }
 
-
+@media (min-width: 1200px){
+    .intro .container {
+        padding-right: $container-width-lg * 0.4;
+    }
+}

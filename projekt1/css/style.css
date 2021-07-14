@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bellota&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&family=Roboto:wght@100;300;400;500;700&display=swap");
 article,
 aside,
 details,
@@ -248,8 +248,10 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 p, input {
+  font-family: "Roboto", sans-serif;
   color: #30383b;
   padding-bottom: 15px;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4 {
@@ -265,19 +267,12 @@ h2 {
   font-size: 42px;
 }
 
+h3 {
+  font-size: 22px;
+}
+
 ul {
   padding: 0;
-}
-
-a {
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-li a {
-  text-transform: uppercase;
-  color: #473452;
 }
 
 section {
@@ -290,14 +285,20 @@ section {
 
 @media (min-width: 768px) {
   .container {
-    width: 60%;
-    margin: auto;
+    width: 720px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
   }
 }
 
 .navbar {
   width: 100%;
   padding-top: 40px;
+  font-size: 15px;
 }
 
 .navbar__list {
@@ -307,6 +308,13 @@ section {
 .navbar__list li {
   display: inline-block;
   margin: 0 2%;
+}
+
+.navbar__list li a {
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #473452;
 }
 
 .navbar__logotxt {
@@ -342,13 +350,13 @@ section {
 
 .leaflet:hover {
   border: transparent 1px solid;
-  -webkit-box-shadow: 0 0 1em lightgray;
-          box-shadow: 0 0 1em lightgray;
+  -webkit-box-shadow: 0 5px 20px #f0f0f0;
+          box-shadow: 0 5px 20px #f0f0f0;
 }
 
 .leaflet span {
   font-family: "Bellota", cursive;
-  font-size: 9px;
+  font-size: 10px;
   display: block;
   margin-top: 15px;
 }
@@ -374,9 +382,8 @@ section {
 
 .card {
   width: 100%;
-  margin: 0 1.5%;
   position: relative;
-  margin: 40px 0;
+  margin: 60px 0;
 }
 
 .card-img {
@@ -385,7 +392,6 @@ section {
 
 .card-info-container {
   width: 100%;
-  max-height: 25%;
   position: absolute;
   top: 90%;
   -webkit-transition: top 0.3s;
@@ -404,6 +410,15 @@ section {
   transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
 }
 
+.card-info h3 {
+  margin: 10px 0;
+}
+
+.card-info p {
+  padding: 0;
+  margin: 5% 0;
+}
+
 .card-info-socials {
   opacity: 0;
   display: -webkit-box;
@@ -412,6 +427,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 10px 0;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
@@ -435,11 +451,11 @@ section {
       flex-shrink: 0;
   border: 1px solid #30383b;
   border-radius: 50%;
-  line-height: 36px;
+  line-height: 44px;
   margin: 0 4%;
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
+  font-size: 30px;
+  width: 44px;
+  height: 44px;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
@@ -451,18 +467,23 @@ section {
 }
 
 .btn, .btn-gray, .btn-white, .sqr-btn {
-  width: auto;
-  height: 40px;
-  margin: 5px;
-  padding: 0 1.5rem;
   font-family: "Roboto", sans-serif;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 500;
   background-color: #1ba4ce;
+  display: inline-block;
+  line-height: 40px;
+  height: 40px;
+  margin: 25px;
+  padding: 0 2.5rem;
   border: none;
   color: white;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
+}
+
+.btn:hover, .btn-gray:hover, .btn-white:hover, .sqr-btn:hover {
+  cursor: pointer;
 }
 
 .btn {
@@ -494,13 +515,37 @@ section {
     width: 60%;
   }
   .navbar__list {
-    list-style-type: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .leaflet {
+    border: lightgray 1px solid;
+    padding: 5%;
+    width: 80%;
+    margin: 2% auto;
+  }
+  .our-team .container {
+    width: 95%;
+  }
+  .card {
+    width: 30%;
+    margin: 0 1.5%;
+    position: relative;
+  }
+  .social-media-icon {
+    line-height: 34px;
+    font-size: 22px;
+    width: 34px;
+    height: 34px;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+  }
+}
+
+@media (min-width: 1200px) {
   .leaflet {
     border: lightgray 1px solid;
     padding: 2%;
@@ -512,14 +557,34 @@ section {
     margin: 0 1.5%;
     position: relative;
   }
+  .our-team .container {
+    width: 1140px;
+  }
+  .social-media-icon {
+    line-height: 44px;
+    font-size: 30px;
+    width: 44px;
+    height: 44px;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+  }
 }
 
 .header {
   padding-top: 30px;
 }
 
-.header__background {
+.header__background-top {
   display: none;
+}
+
+.header__background-left {
+  display: inline-block;
+  z-index: -1;
+  position: absolute;
+  height: 125px;
+  left: -40px;
+  top: 30vh;
 }
 
 .header__container {
@@ -533,12 +598,15 @@ section {
 }
 
 @media (min-width: 768px) {
-  .header__background {
+  .header__background-top {
     display: inline-block;
     z-index: -1;
     position: absolute;
-    width: 40%;
+    width: 40vw;
     right: 0px;
+  }
+  .header__background-left {
+    height: 25vw;
   }
   .navbar {
     width: 60%;
@@ -553,19 +621,63 @@ section {
   }
 }
 
-.intro__container {
-  width: 100%;
+@media (min-width: 1200px) {
+  .navbar {
+    width: 50%;
+  }
+}
+
+.special-btn {
+  color: #473452;
+  display: inline-block;
+  line-height: 40px;
+  height: 40px;
+  font-size: 32px;
+  margin: 5px;
+}
+
+.special-btn-icon {
+  display: inline-block;
+  line-height: 40px;
+}
+
+.special-btn:hover {
+  color: #30383b;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
-  .intro__container {
-    width: 60%;
+  .intro .container {
+    padding-right: 144px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro .container {
+    padding-right: 456px;
   }
 }
 
 .about-us__logo {
   width: 100px;
   margin-bottom: 20px;
+}
+
+.additional-heading {
+  color: #473452;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .about-us p {
+    padding: 0 72px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us p {
+    padding: 0 144px;
+  }
 }
 
 .gallery {
@@ -618,6 +730,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-decoration: none;
   color: white;
   width: 100%;
   height: 100%;
@@ -656,11 +769,18 @@ section {
   display: -ms-flexbox;
   display: flex;
   background-color: #1ba4ce;
+  padding: 0;
+}
+
+.validate-info {
+  margin-left: 20px;
+  font-size: 13px;
+  color: red;
 }
 
 .appointment__form {
   width: 90%;
-  margin: auto;
+  margin: 60px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -672,10 +792,11 @@ section {
       flex-wrap: wrap;
 }
 
-.appointment__form input:not([type="submit"]), .appointment__form select, .appointment__form textarea {
+.appointment__form input:not([type="submit"]), .appointment__form input[type="date"],
+.appointment__form input[type="time"], .appointment__form select, .appointment__form textarea {
   padding: 10px;
   margin: 2%;
-  font-size: 30px;
+  font-size: 32px;
   color: white;
   border: none;
   border-bottom: 1px white solid;
@@ -701,32 +822,36 @@ section {
 
 .appointment__form textarea {
   width: 100%;
-  height: 60px;
+  height: 64px;
   overflow-y: hidden;
+}
+
+.appointment__form option {
+  background-color: #1ba4ce;
 }
 
 .appointment__form input::-webkit-input-placeholder,
 .appointment__form textarea::-webkit-input-placeholder {
   color: white;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .appointment__form input:-ms-input-placeholder,
 .appointment__form textarea:-ms-input-placeholder {
   color: white;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .appointment__form input::-ms-input-placeholder,
 .appointment__form textarea::-ms-input-placeholder {
   color: white;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .appointment__form input::placeholder,
 .appointment__form textarea::placeholder {
   color: white;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .appointment__form input:focus,
@@ -735,17 +860,27 @@ section {
   outline: none;
 }
 
+option {
+  background-color: black;
+}
+
 @media (min-width: 769px) {
   .appointment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .appointment__bg {
+    width: 40%;
     background-image: url("../img/contact-bg.jpg");
-    background-position: left;
-    background-size: 40%;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .appointment__form {
     padding-left: 5%;
-    margin-left: 40%;
-    width: 40%;
+    margin: 60px 0;
+    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -756,33 +891,42 @@ section {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .appointment__form input[type="submit"] {
+    margin: 3rem 0.5rem;
+  }
   .appointment__form input:not([type="submit"]) {
     width: 45%;
-    font-size: 15px;
+    font-size: 16px;
   }
   .appointment__form select {
     width: 45%;
-    font-size: 15px;
+    font-size: 16px;
   }
   .appointment__form input::-webkit-input-placeholder,
   .appointment__form textarea::-webkit-input-placeholder {
     color: white;
-    font-size: 15px;
+    font-size: 16px;
   }
   .appointment__form input:-ms-input-placeholder,
   .appointment__form textarea:-ms-input-placeholder {
     color: white;
-    font-size: 15px;
+    font-size: 16px;
   }
   .appointment__form input::-ms-input-placeholder,
   .appointment__form textarea::-ms-input-placeholder {
     color: white;
-    font-size: 15px;
+    font-size: 16px;
   }
   .appointment__form input::placeholder,
   .appointment__form textarea::placeholder {
     color: white;
-    font-size: 15px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .appointment__form {
+    width: 40%;
   }
 }
 
@@ -854,7 +998,7 @@ section {
 
 .contact-us {
   width: 100%;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .contact-us input:not([type="submit"]),
@@ -928,7 +1072,7 @@ section {
 }
 
 footer span {
-  font-size: 15px;
+  font-size: 16px;
   padding: 60px;
 }
 /*# sourceMappingURL=style.css.map */

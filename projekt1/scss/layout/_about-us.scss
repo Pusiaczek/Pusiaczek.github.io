@@ -2,3 +2,23 @@
     width: 100px;
     margin-bottom: 20px;
 }
+
+.additional-heading {
+    color: $purple-color;
+    font-weight: 500;
+}
+
+
+
+@media (min-width: 768px) {
+    .about-us p {
+        padding: 0 $container-width-md * 0.1;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .about-us p {
+        padding: 0 $container-width-md * 0.2;
+    }
+}

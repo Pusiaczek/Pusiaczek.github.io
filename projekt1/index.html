@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <img src="img/header-bg.png" alt="spa-header" class="header__background">
+    <img src="img/header-bg.png" alt="spa-header" class="header__background-top">
+    <img src="img/header-flowers.png" alt="spa-header" class="header__background-left">
+
+    
     <section class="header">
         <div class="container header__container">
             <a href="#" class="navbar__logotxt">
@@ -29,29 +32,29 @@
         </div>
     </section>
 
+
     <section class="intro">
         <div class="container">
-            <div class="intro__container">
-                <h3>SPA & BEAUTY CENTER</h3>
-                <h1>Beauty and success starts here</h1>
-                <p>Together creeping heaven upon third dominion be upon won't darkness rule behold it created good saw after she'd Our set living.</p>
-                <button class="sqr-btn">Reserve now -></button>
-                <button class="">Watch our story</button>
-
-            </div>
+            <h3>SPA & BEAUTY CENTER</h3>
+            <h1>Beauty and success starts here</h1>
+            <p>Together creeping heaven upon third dominion be upon won't darkness rule behold it created good saw after she'd Our set living.</p>
+            <a class="sqr-btn">Reserve now 🡢</a>
+            <a class="special-btn"><i class="special-btn-icon far fa-play-circle"></i>Watch our story</a>
         </div>
     </section>
+
 
     <section class="about-us">
         <div class="container text-center">
             <img src="img/logo.png" alt="spa-logo" class="about-us__logo">
-            <p>ABOUT OUR SPA CENTER</p>
+            <p class="additional-heading">ABOUT OUR SPA CENTER</p>
             <h2>Come and you will be inspired!</h2>
             <p>It's the end of summer the sweltering heat makes human sweat in the night and makes the plants and trees wilt even in the moonlit nights. The eastern wind breeze brings an eerie feeling, that the monsoon clouds are soon coming, there is a strange silence in the ears, the sky gets darker and darker.</p>
 
-            <button class="btn">READ MORE</button>
+            <a class="btn">READ MORE</a>
         </div>
     </section>
+
 
     <section class="gallery">
         <div class="gallery__item">
@@ -91,6 +94,7 @@
             </div>
         </div>
     </section>
+
     
     <section class="popular-procedures">
         <div class="container text-center">
@@ -121,6 +125,7 @@
             </div>
         </div>
     </section>
+
 
     <section class="our-team">
         <div class="container text-center">
@@ -180,7 +185,10 @@
     </section>
 
     <section class="appointment">
-        <form action="" class="appointment__form">
+        <div class="appointment__bg">
+        </div>
+
+        <form action="" class="appointment__form" id="appointment-form">
             <input type="text" name="name" id="name" placeholder="NAME">
             <input type="email" name="email" id="email" placeholder="EMAIL ADDRESS">
             <select name="service" id="service">
@@ -193,10 +201,12 @@
             <input type="date" name="date" id="date">
             <input type="time" name="time" id="time">
             <textarea name="note" id="note" placeholder="YOUR NOTES"></textarea>
+            <label for="appointment-form" class="validate-info" id="validate-info"></label>
 
-            <input type="submit" class="btn-white" value="MAKE AN APPOINTMENT">
+            <input type="submit" id="make-appointment-btn" class="btn-white" value="MAKE AN APPOINTMENT">
         </form>
     </section>
+
 
     <section class="blog-news">
         <div class="container text-center">
@@ -230,6 +240,7 @@
             </div>
         </div>
     </section>
+
 
     <section class="contact text-center">
         <div class="container">
@@ -265,6 +276,7 @@
         </div>
     </section>
 
+
     <footer>
         <div class="container text-center">
             <a href="#" class="footer-logo">
@@ -284,5 +296,7 @@
             <span>© COPYRIGHT 2021</span>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
