@@ -1,0 +1,93 @@
+// ogolne stylowanie. Typografia, jakies marginesy itp itd
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: $main-font;
+}
+
+.container {
+    width: $container-width-xsm;
+    margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  
+}
+
+
+// p, input {
+//     font-family: $Roboto;
+//     color: $gray-color;
+//     padding-bottom: 15px;
+//     font-weight: 300;
+    
+// }
+
+// h1, h2, h3, h4 {
+//     font-family: $Bellota;
+//     color: $purple-color;
+// }
+
+// h1 {
+//     font-size: $main-section-title-font-size;
+// }
+
+// h2 {
+//     font-size: $section-header-font-size;
+// }
+
+// h3 {
+//     font-size: $card-header-font-size;
+// }
+
+// ul {
+//     padding: 0;
+// }
+
+// section {
+//     padding: 30px 0;
+// }
+
+// .text-center {
+//     text-align: center;
+// }
+
+
+
+
+@media (min-width: 480px) {
+    .container {
+        width: $container-width-sm;
+    }
+    // section {
+    //     padding: 60px 0;
+    // }
+    
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: $container-width-md;
+    }
+
+}
+
+@media (min-width: 1024px) {
+  .container {
+      width: $container-width-lg;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .container {
+      width: $container-width-xlg;
+  }
+
+}
