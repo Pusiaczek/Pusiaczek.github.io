@@ -1,5 +1,7 @@
 const topNavBtn = document.getElementById('topnav-btn')
 const topNavList = document.getElementById('topnav-list')
+const input = document.getElementById('testinput')
+const btn = document.getElementById('testbtn')
 
 const debug = () => {
   const test1 = document.getElementById('test1')
@@ -24,8 +26,10 @@ window.addEventListener('load', () => {
   debug()
 
 
+
   window.addEventListener('resize', resizeUtility)
   window.addEventListener('resize', debug)
+
 
   topNavBtn.onclick = (e) => {
     e.preventDefault()
