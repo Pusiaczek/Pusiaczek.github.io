@@ -46,7 +46,7 @@
 @media (min-width: $xsm-max-size) {
   // container-width: 95%
   .test {
-    background-color: lawngreen;
+    background-color: red;
   }
   
 }
@@ -61,12 +61,22 @@
     margin-right: 95px;
     color: white;
   }
+
+  .test {
+    background-color: green;
+  }
 }
 
 @media (min-width: $md-max-size) {
   // container-width: 1020px
+
+  .test {
+    background-color: blue;
+  }
 }
 
 @media (min-width: $lg-max-size) {
-  
+  .test {
+    background-color: silver;
+  }
 }
