@@ -13,6 +13,11 @@ $main-section-title-font-size: 50px;
 $card-header-font-size: 22px;
 
 
+$xsm-max-size: calc(425px + 1px);
+$sm-max-size: calc(768px + 1px);
+$md-max-size: calc(1024px + 1px);
+$lg-max-size: calc(1200px + 1px);
+
 $container-width-xsm: 100%;
 $container-width-sm: 95%;
 $container-width-md: 760px;

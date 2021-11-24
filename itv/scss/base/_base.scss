@@ -1,7 +1,7 @@
 // ogolne stylowanie. Typografia, jakies marginesy itp itd
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,24 +9,22 @@ body {
 }
 
 .container {
-    width: $container-width-xsm;
-    margin: auto;
+  width: $container-width-xsm;
+  margin: auto;
 }
 
 a {
   text-decoration: none;
   color: inherit;
   font-family: inherit;
-  
 }
-
 
 // p, input {
 //     font-family: $Roboto;
 //     color: $gray-color;
 //     padding-bottom: 15px;
 //     font-weight: 300;
-    
+
 // }
 
 // h1, h2, h3, h4 {
@@ -58,36 +56,33 @@ a {
 //     text-align: center;
 // }
 
-
-
-
-@media (min-width: 480px) {
-    .container {
-        width: $container-width-sm;
-    }
-    // section {
-    //     padding: 60px 0;
-    // }
-    
-}
-
-@media (min-width: 768px) {
-    .container {
-        width: $container-width-md;
-    }
-
-}
-
-@media (min-width: 1024px) {
+@media (min-width: $xsm-max-size) {
   .container {
-      width: $container-width-lg;
+    width: $container-width-sm;
   }
-
+  // section {
+  //     padding: 60px 0;
+  // }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $sm-max-size) {
   .container {
-      width: $container-width-xlg;
+    width: $container-width-md;
   }
-
 }
+
+@media (min-width: $md-max-size) {
+  .container {
+    width: $container-width-lg;
+  }
+}
+
+@media (min-width: $lg-max-size) {
+  .container {
+    width: $container-width-xlg;
+  }
+}
+// @media (min-width: $xsm-max-size) {
+// @media (min-width: $sm-max-size) {
+// @media (min-width: $md-max-size) {
+// @media (min-width: $lg-max-size) {

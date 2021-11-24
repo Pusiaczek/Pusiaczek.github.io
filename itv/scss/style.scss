@@ -1,17 +1,16 @@
-@import 'base/normalize';
+@import "base/normalize";
 
-@import 'utils/fonts';
+@import "utils/fonts";
 
-@import 'utils/variables';
+@import "utils/variables";
 
-@import 'base/base';
+@import "base/base";
 
-@import 'components/components';
+@import "components/components";
 
-
-@import 'layout/header-top-navbar';
-@import 'layout/header-main';
-@import 'layout/header-main-navbar';
+@import "layout/header-top-navbar";
+@import "layout/header-main";
+@import "layout/header-main-navbar";
 // @import 'layout/intro';
 // @import 'layout/about-us';
 // @import 'layout/gallery';
