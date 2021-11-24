@@ -1,16 +1,37 @@
-window.addEventListener('load', function () {
-  const topNavBtn = document.getElementById('topnav-btn')
-  const topNavList = document.getElementById('topnav-list')
+const topNavBtn = document.getElementById('topnav-btn')
+const topNavList = document.getElementById('topnav-list')
 
-  const toggleTopNavbar = (e) => {
+const debug = () => {
+  const test1 = document.getElementById('test1')
+  const test2 = document.getElementById('test1')
+  const test3 = document.getElementById('test1')
+
+  test1.innerHTML = 'client width: ' + document.body.clientWidth
+}
+
+const resizeUtility = () => {
+  if (document.body.clientWidth <= 425) {
+    topNavList.classList.add("collapsed")
+    topNavBtn.classList.remove("topnav-btn__clicked")
+  } else {
+    topNavList.classList.remove("collapsed")
+  }
+}
+
+
+window.addEventListener('load', () => {
+  resizeUtility()
+  debug()
+
+
+  window.addEventListener('resize', resizeUtility)
+  window.addEventListener('resize', debug)
+
+  topNavBtn.onclick = (e) => {
     e.preventDefault()
-
     topNavBtn.classList.toggle("topnav-btn__clicked")
     topNavList.classList.toggle("collapsed")
-
-  }
-
-  topNavBtn.onclick = toggleTopNavbar;
+  };
 })
 
 

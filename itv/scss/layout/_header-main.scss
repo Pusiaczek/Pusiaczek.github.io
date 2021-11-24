@@ -13,7 +13,7 @@
 }
 
 .header-main-itv-logo {
-  width: 60%;
+  width: 75%;
   // height: auto;
   margin: auto;
   cursor: pointer;
@@ -23,25 +23,7 @@
   display: none;
 }
 
-.social-icon {
-  height: 38px;
-  width: 38px;
-  align-self: flex-end;
-  display: block;
-  background-size: inherit;
-  background-position: center;
-  background-size: cover;
-  margin: 5px;
-  cursor: pointer;
-}
 
-.fb-icon {
-  background-image: url("../img/header/fb-icon.png");
-}
-
-.twitter-icon {
-  background-image: url("../img/header/twitter-icon.png");
-}
 
 @media (min-width: $xsm-max-size) {
   // container-width: 95%
