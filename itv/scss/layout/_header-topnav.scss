@@ -9,7 +9,6 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 100%;
   position: relative;
   height: 42px;
   padding: 0;
@@ -31,7 +30,7 @@
 
   padding: 0;
   margin: 0;
-  
+
   font-size: 1.5rem;
   color: white;
   background: none;
@@ -63,7 +62,7 @@
   left: 0;
 
   padding: 0.5rem 0;
-  padding-left: 3.5rem;
+  padding-left: 4rem;
   margin: 0;
 
   background-color: $blue-color;
@@ -102,42 +101,9 @@
 
 .header-topnav-live {
   display: none;
-  height: 100%;
-  width: 50%;
-  color: white;
-  font-size: 0.75rem;
 }
 
-.header-topnav-live-icon {
-  background-image: url("../img/header/live-icon.png");
-  display: inline-block;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%;
-  width: 40px;
-  padding: 0;
-  margin: 0 10px;
-}
 
-.live-icon__off {
-}
-
-.header-topnav-live-title {
-  font-weight: 700;
-}
-
-.header-topnav-live-text__highlighted {
-  color: $red-color;
-}
-
-.header-topnav-live-message,
-.header-topnav-live-title {
-  display: inline-block;
-  margin: 0 2px;
-  padding: 0;
-  height: 100%;
-}
 
 @media (min-width: $xsm-max-size) {
   // container-width: 95%
@@ -171,31 +137,68 @@
 }
 @media (min-width: $sm-max-size) {
   // container-width: 760px
-}
-
-@media (min-width: $md-max-size) {
-  // container-width: 1020px
-  .header-topnav-container {
-    display: flex;
-  }
-
-  .header-topnav-list,
-  .header-topnav-live {
+  .header-topnav-list {
+    justify-content:space-between;
+    flex-shrink: 0;
+    // padding-left: 1rem;
     width: 50%;
-    padding: 0 1rem;
   }
+  
 
   .header-topnav-live {
+    height: 100%;
+    width: 100%;
+
     display: flex;
     justify-content: end;
     align-items: center;
 
+    font-size: 0.75rem;
+
+    color: white;
     cursor: pointer;
   }
 
-  .header-topnav-live-title,
-  .header-topnav-live-message {
-    margin-top: 10px;
+  .header-topnav-live-icon {
+    background-image: url("../img/header/live-icon.png");
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+  }
+  
+  .live-icon__off {
+  }
+  
+  .header-topnav-live-title {
+    font-weight: 700;
+  }
+  
+  .header-topnav-live-text__highlighted {
+    color: $red-color;
+  }
+  
+  .header-topnav-live-message,
+  .header-topnav-live-title {
+    display: inline;
+    margin: 0 2px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $md-max-size) {
+  // container-width: 1020px
+  .header-topnav-list-item {
+    font-size: 0.9rem;
+  }
+
+  .header-topnav-live {
+    font-size: 0.9rem;
   }
 }
 

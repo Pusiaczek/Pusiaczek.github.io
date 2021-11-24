@@ -29,3 +29,20 @@ $container-width-xlg: 1200px;
 
 $main-font: 'Roboto', sans-serif;
 $secondary-font: 'Bellota', cursive;
+
+.testdiv {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+  padding: 5px;
+  border: 1px solid plum;
+}
+
+.testdiv label {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid black;
+}

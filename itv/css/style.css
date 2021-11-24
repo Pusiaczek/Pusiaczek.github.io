@@ -237,6 +237,28 @@ input[type="checkbox"], input[type="radio"] {
   padding: 0;
 }
 
+.testdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+  padding: 5px;
+  border: 1px solid plum;
+}
+
+.testdiv label {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -312,7 +334,6 @@ a {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  width: 100%;
   position: relative;
   height: 42px;
   padding: 0;
@@ -374,7 +395,7 @@ a {
   top: 0;
   left: 0;
   padding: 0.5rem 0;
-  padding-left: 3.5rem;
+  padding-left: 4rem;
   margin: 0;
   background-color: #143468;
   list-style: none;
@@ -411,38 +432,6 @@ a {
 
 .header-topnav-live {
   display: none;
-  height: 100%;
-  width: 50%;
-  color: white;
-  font-size: 0.75rem;
-}
-
-.header-topnav-live-icon {
-  background-image: url("../img/header/live-icon.png");
-  display: inline-block;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%;
-  width: 40px;
-  padding: 0;
-  margin: 0 10px;
-}
-
-.header-topnav-live-title {
-  font-weight: 700;
-}
-
-.header-topnav-live-text__highlighted {
-  color: #d90000;
-}
-
-.header-topnav-live-message,
-.header-topnav-live-title {
-  display: inline-block;
-  margin: 0 2px;
-  padding: 0;
-  height: 100%;
 }
 
 @media (min-width: calc(425px + 1px)) {
@@ -480,18 +469,18 @@ a {
   }
 }
 
-@media (min-width: calc(1024px + 1px)) {
-  .header-topnav-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .header-topnav-list,
-  .header-topnav-live {
+@media (min-width: calc(768px + 1px)) {
+  .header-topnav-list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     width: 50%;
-    padding: 0 1rem;
   }
   .header-topnav-live {
+    height: 100%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -501,11 +490,42 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-size: 0.75rem;
+    color: white;
     cursor: pointer;
   }
-  .header-topnav-live-title,
-  .header-topnav-live-message {
-    margin-top: 10px;
+  .header-topnav-live-icon {
+    background-image: url("../img/header/live-icon.png");
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+  }
+  .header-topnav-live-title {
+    font-weight: 700;
+  }
+  .header-topnav-live-text__highlighted {
+    color: #d90000;
+  }
+  .header-topnav-live-message,
+  .header-topnav-live-title {
+    display: inline;
+    margin: 0 2px;
+    padding: 0;
+  }
+}
+
+@media (min-width: calc(1024px + 1px)) {
+  .header-topnav-list-item {
+    font-size: 0.9rem;
+  }
+  .header-topnav-live {
+    font-size: 0.9rem;
   }
 }
 
@@ -536,6 +556,9 @@ a {
 }
 
 @media (min-width: calc(425px + 1px)) {
+  .header-main-itv-logo {
+    width: 320px;
+  }
   .test {
     background-color: red;
   }
@@ -543,14 +566,23 @@ a {
 
 @media (min-width: calc(768px + 1px)) {
   .header-main-socials {
-    -ms-flex-item-align: end;
-        align-self: end;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 35px;
-    margin-right: 95px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -ms-flex-item-align: end;
+        align-self: end;
+    width: 50%;
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+    font-size: 3rem;
     color: white;
+  }
+  .header-main-itv-logo {
+    width: 350px;
+    margin-left: 5%;
   }
   .test {
     background-color: green;

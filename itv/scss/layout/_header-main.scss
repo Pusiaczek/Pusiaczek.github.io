@@ -27,6 +27,11 @@
 
 @media (min-width: $xsm-max-size) {
   // container-width: 95%
+  .header-main-itv-logo {
+    width: 320px;
+  }
+
+
   .test {
     background-color: red;
   }
@@ -36,12 +41,23 @@
 @media (min-width: $sm-max-size) {
   // container-width: 760px
   .header-main-socials {
-    align-self: end;
     display: flex;
-    // background-color: khaki;
-    margin-bottom: 35px;
-    margin-right: 95px;
+    justify-content: end;
+    align-self: end;
+
+    width: 50%;
+
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+    
+    font-size: 3rem;
     color: white;
+    // background-color: plum;
+  }
+
+  .header-main-itv-logo {
+    width: 350px;
+    margin-left: 5%;
   }
 
   .test {
@@ -51,6 +67,7 @@
 
 @media (min-width: $md-max-size) {
   // container-width: 1020px
+
 
   .test {
     background-color: blue;
