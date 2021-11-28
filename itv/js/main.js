@@ -17,9 +17,7 @@ const debug = () => {
 const resizeHandler = () => {
   if (document.body.clientWidth <= 425) {
     topnavList.classList.remove("active")
-    topnavHamburger.classList.remove("topnav-btn__clicked")
-  } else {
-    topnavList.classList.add("active")
+    topnavHamburger.classList.remove("active")
   }
 }
 
