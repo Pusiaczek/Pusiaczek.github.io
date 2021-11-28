@@ -64,7 +64,7 @@
   left: 0;
 
   // padding: 0.5rem 0;
-  padding: 0.4rem 0px 15px 30px;
+  padding: 0.4rem 0px 0 30px;
   margin: 0;
 
   background-color: $blue-color;
@@ -76,6 +76,7 @@
 }
 
 .header-topnav-list.active {
+  padding: 0.4rem 0px 15px 30px;
   top: 0;
 }
 

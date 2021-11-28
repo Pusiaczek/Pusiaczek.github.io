@@ -395,7 +395,7 @@ a {
           align-items: flex-start;
   top: -25%;
   left: 0;
-  padding: 0.4rem 0px 15px 30px;
+  padding: 0.4rem 0px 0 30px;
   margin: 0;
   background-color: #143468;
   list-style: none;
@@ -406,6 +406,7 @@ a {
 }
 
 .header-topnav-list.active {
+  padding: 0.4rem 0px 15px 30px;
   top: 0;
 }
 
