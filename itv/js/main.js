@@ -1,5 +1,8 @@
-const topNavBtn = document.getElementById('topnav-btn')
-const topNavList = document.getElementById('topnav-list')
+const topnavHamburger = document.getElementById('topnav-hamburger')
+const topnavList = document.getElementById('topnav-list')
+
+
+
 const input = document.getElementById('testinput')
 const btn = document.getElementById('testbtn')
 
@@ -11,30 +14,30 @@ const debug = () => {
   test1.innerHTML = 'client width: ' + document.body.clientWidth
 }
 
-const resizeUtility = () => {
+const resizeHandler = () => {
   if (document.body.clientWidth <= 425) {
-    topNavList.classList.add("collapsed")
-    topNavBtn.classList.remove("topnav-btn__clicked")
+    topnavList.classList.remove("active")
+    topnavHamburger.classList.remove("topnav-btn__clicked")
   } else {
-    topNavList.classList.remove("collapsed")
+    topnavList.classList.add("active")
   }
 }
 
 
 window.addEventListener('load', () => {
-  resizeUtility()
+  resizeHandler()
   debug()
 
 
 
-  window.addEventListener('resize', resizeUtility)
+  window.addEventListener('resize', resizeHandler)
   window.addEventListener('resize', debug)
 
 
-  topNavBtn.onclick = (e) => {
+  topnavHamburger.onclick = (e) => {
     e.preventDefault()
-    topNavBtn.classList.toggle("topnav-btn__clicked")
-    topNavList.classList.toggle("collapsed")
+    topnavHamburger.classList.toggle("active")
+    topnavList.classList.toggle("active")
   };
 })
 
