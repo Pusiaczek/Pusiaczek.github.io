@@ -23,10 +23,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-.header-topnav-hamburger:hover .header-topnav-hamburger-bar {
-  background-color: $yellow-color;
-}
-
 .header-topnav-hamburger-bar {
   display: block;
   width: 25px;
@@ -39,6 +35,7 @@
 
 .header-topnav-hamburger.active {
   margin-left: $topnav-items-margin / 4;
+  position: sticky;
 }
 
 .header-topnav-hamburger.active .header-topnav-hamburger-bar:nth-child(2) {

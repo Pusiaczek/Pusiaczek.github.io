@@ -1,30 +1,49 @@
-const topnavHamburger = document.getElementById('topnav-hamburger')
-const topnavList = document.getElementById('topnav-list')
-
-
-
-const input = document.getElementById('testinput')
-const btn = document.getElementById('testbtn')
-
-const debug = () => {
-  const test1 = document.getElementById('test1')
-  const test2 = document.getElementById('test1')
-  const test3 = document.getElementById('test1')
-
-  test1.innerHTML = 'client width: ' + document.body.clientWidth
-}
-
-const resizeHandler = () => {
-  if (document.body.clientWidth <= 425) {
-    topnavList.classList.remove("active")
-    topnavHamburger.classList.remove("active")
-  }
-}
-
-
 window.addEventListener('load', () => {
+  const topnavHamburger = document.getElementById('topnav-hamburger')
+  const topnavList = document.getElementById('topnav-list')
+  const dropdownButtons = document.querySelectorAll('.header-mainnav-dropdown-linkbtn')
+
+
+
+
+  const input = document.getElementById('testinput')
+  const btn = document.getElementById('testbtn')
+
+  const debug = () => {
+    const test1 = document.getElementById('test1')
+    const test2 = document.getElementById('test1')
+    const test3 = document.getElementById('test1')
+
+    test1.innerHTML = 'client width: ' + document.body.clientWidth
+  }
+
+  const resizeHandler = () => {
+    if (document.body.clientWidth <= 425) {
+      topnavList.classList.remove("active")
+      topnavHamburger.classList.remove("active")
+    }
+    if (document.body.clientWidth <= 1025) {
+      document.querySelectorAll('.header-mainnav-dropdown-content').forEach((item) => { item.classList.remove("active") })
+    }
+  }
+
+
+
+
   resizeHandler()
   debug()
+
+  const dropdownClickHandler = (e) => {
+    const dropdown = e.target.parentElement.nextSibling.nextSibling
+    dropdown.classList.toggle('active')
+
+    // console.log(e.target.parentElement.nextSibling.nextSibling);
+  }
+
+  console.log(dropdownButtons);
+  dropdownButtons.forEach((item) => {
+    item.addEventListener('click', dropdownClickHandler)
+  })
 
 
 
