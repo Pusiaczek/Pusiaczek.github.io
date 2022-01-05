@@ -1,0 +1,60 @@
+.topnav {
+  // height: 60px;
+}
+
+.topnav-socials {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.topnav-live {
+  height: 100%;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  font-size: 0.7rem;
+
+  color: white;
+  cursor: pointer;
+}
+
+@include media-breakpoint-up(xl) {
+  .topnav-live {
+    font-size: 0.9rem;
+  }
+}
+
+.topnav-live-icon {
+  background-image: url("../img/header/live-icon.png");
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  margin-right: 5px;
+}
+
+.topnav-live-message,
+.topnav-live-text {
+  display: inline-block;
+  margin: 0 2px;
+  padding: 0;
+}
+
+.topnav-live-text {
+  font-weight: 700;
+}
+.topnav-live-message {
+  font-weight: initial;
+}
+
+.topnav-live-text__highlighted {
+  color: $red;
+}
+

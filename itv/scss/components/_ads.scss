@@ -1,0 +1,20 @@
+$ad-bg-color: rgb(235, 253, 153);
+
+.big-ad {
+  margin: 10px auto;
+  background-color: $ad-bg-color;
+  height: 216px;
+  display: block;
+}
+
+.tut-ad {
+  background-color: $ad-bg-color;
+  height: 100%;
+
+}
+
+.news-aside-ad {
+  background-color: $ad-bg-color;
+  height: 200px;
+  // height: 100%;
+}

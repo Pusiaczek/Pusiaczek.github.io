@@ -1,0 +1,27 @@
+.section-header {
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-weight: 700;
+  color: white;
+  
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-family: $main-font;
+  background-color: $light-blue;
+}
+
+.section-header p {
+  margin: 0;
+}
+
+.section-header::before {
+  content: '#';
+  margin-left: 1.5rem;
+  color: $yellow;
+}
+
+.section-header__highlighted {
+  font-weight: 300;
+}

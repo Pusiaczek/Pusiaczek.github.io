@@ -1,19 +1,25 @@
-@import "base/normalize";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 
 @import "utils/fonts";
-
 @import "utils/variables";
 
 @import "base/base";
 
-@import "components/components";
+@import "components/index";
 
-@import "layout/header-topnav";
+
+@import "layout/topnav";
 @import "layout/header-main";
-@import "layout/header-mainnav";
-// @import 'layout/intro';
-// @import 'layout/about-us';
+@import "layout/carousel-main";
+@import 'layout/tuc';
+@import 'layout/month-top';
+@import 'layout/tut';
+@import 'layout/news';
+@import 'layout/footer';
 // @import 'layout/gallery';
 // @import 'layout/_appointment';
 // @import 'layout/contact-form';
-// @import 'layout/footer';
+
+
+// @import "layout/header-mainnav";

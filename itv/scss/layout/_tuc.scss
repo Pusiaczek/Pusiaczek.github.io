@@ -1,0 +1,61 @@
+.tuc {
+ height: 210px;
+ margin: 15px 0;
+}
+
+.tuc-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  height: 100%;
+}
+
+.tuc-item {
+  position: relative;
+  height: 100%;
+  width: 33%;
+}
+
+.tuc-bg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.tuc-button,
+.tuc-category,
+.tuc-description {
+  position: absolute;
+}
+
+.tuc-button {
+  top: 5%;
+  right: 5%;
+}
+
+.tuc-label {
+  position: absolute;
+  display: inline-block;
+  font-family: $main-font;
+
+  color: white;
+
+  width: 100%;
+  padding: 5%;
+  bottom: 0%;
+  left: 0%;
+}
+
+.tuc-category {
+  position: relative;
+  margin: 4px 0;
+  font-size: 0.75rem;
+}
+.tuc-description {
+  position: relative;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}

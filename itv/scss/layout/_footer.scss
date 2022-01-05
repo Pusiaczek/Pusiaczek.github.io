@@ -1,0 +1,59 @@
+.footer-ribbon {
+  display: flex;
+  height: 55px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  font-weight: 300;
+}
+
+footer p {
+  display: inline-block;
+  margin: 0;
+
+  font-size: 0.75rem;
+  color: white;
+}
+
+.footer-ribbon-desc-left span {
+  font-weight: 700;
+}
+
+.footer-ribbon-desc-right {
+  font-weight: 700;
+}
+
+.footer-ribbon-desc-right span {
+  color: $red;
+}
+
+.footer-bg {
+  position: relative;
+}
+
+.footer-bg::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-image: url("../img/footer/footer-bg.png");
+  background-repeat: no-repeat;
+  background-position: 110% 0;
+  background-size: contain;
+}
+
+.footer-logo-container {
+  height: 325px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-itv-logo {
+  width: 35%;
+  margin-left: 5%;
+  cursor: pointer;
+}

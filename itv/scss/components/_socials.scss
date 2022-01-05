@@ -1,0 +1,25 @@
+.socials-container {
+  // background-color: pink;
+  display: inline-block;
+  padding: 0 2px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 2rem;
+  margin: 0 0.25rem;
+}
+
+.social-icon:hover {
+  color: $yellow;
+  transition: color 0.3s ease-in-out;
+}
+
+.fb-icon {
+  // background-image: url("../img/header/fb-icon.png");
+}
+
+.twitter-icon {
+  // background-image: url("../img/header/twitter-icon.png");
+}
+

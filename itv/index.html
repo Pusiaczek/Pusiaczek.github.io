@@ -7,45 +7,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iTV</title>
   <script src="https://kit.fontawesome.com/ad74a8bc0d.js" crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.bundle.js" defer></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="header">
-    <div class="header-topnav">
-      <div class="container header-topnav-container">
-        <ul class="header-topnav-list" id="topnav-list">
-          <!-- <li class="header-topnav-list-header">MENU</li> -->
-          <li class="header-topnav-list-item"><a href="#">o nas</a></li>
-          <li class="header-topnav-list-item"><a href="#">reklama</a></li>
-          <li class="header-topnav-list-item"><a href="#">patronat</a></li>
-          <li class="header-topnav-list-item"><a href="#">polityka prywatności</a></li>
-          <li class="header-topnav-list-item"><a href="#">kontakt</a></li>
-        </ul>
-        <!-- <div class="header-topnav-btnwrapper"> -->
-        <div class="header-topnav-hamburger" id="topnav-hamburger">
-          <span class="header-topnav-hamburger-bar"></span>
-          <span class="header-topnav-hamburger-bar"></span>
-          <span class="header-topnav-hamburger-bar"></span>
-        </div>
-        <!-- <button class="header-topnav-btn" i  d="topnav-btn">⃤</button> -->
-        <!-- </div> -->
+  <header>
+    <nav class="topnav navbar navbar-expand-lg navbar-dark bg-primary text-uppercase text-white p-lg-0">
+      <div class="container-lg ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topnav-toggler"
+          aria-controls="topnav-toggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="header-topnav-socials">
+        <div class="topnav-socials d-inline-block d-lg-none">
           <div class="socials-container">
             <a href="#"><i class="fab fa-facebook-square social-icon"></i></a>
             <a href="#"><i class="fab fa-twitter-square social-icon"></i></a>
           </div>
         </div>
 
-        <div class="header-topnav-live">
-          <i class="header-topnav-live-icon"></i>
-          <p class="header-topnav-live-title">Aktualnie <span class="header-topnav-live-text__highlighted">na żywo:
-            </span>
-          <p class="header-topnav-live-message">Transmisja Mszy Świętej w Trzemeśni</p>
+        <div class="collapse navbar-collapse" id="topnav-toggler">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">O nas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reklama</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Patronat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Polityka prywatności</a>
+            </li>
+            <li class="nav-item mr-auto">
+              <a class="nav-link" href="#">Kontakt</a>
+            </li>
+          </ul>
+
+          <div class="topnav-live d-none d-lg-flex">
+            <i class="topnav-live-icon"></i>
+            <p class="topnav-live-text">Aktualnie
+              <span class="topnav-live-text__highlighted">na żywo:</span>
+              <span class="topnav-live-message">Transmisja Mszy Świętej w Trzemeśni</span>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </nav>
 
     <div class="header-main">
       <div class="container header-main-container">
@@ -60,56 +70,422 @@
       </div>
     </div>
 
-    <div class="header-mainnav">
-      <div class="container header-mainnav-container">
-        <ul class="header-mainnav-list header-mainnav-list__mobile">
-          <div class="header-mainnav-dropdown" id="header-mainnav-dropdown-region-container">
-            <li class="header-mainnav-dropdown-btn" id="header-mainnav-dropdown-region-btn"><a href="#" class="header-mainnav-dropdown-linkbtn">wybierz rejon V</a></li>
-            <div class="header-mainnav-dropdown-content" id="header-mainnav-dropdown-region-content">
-              <li class="header-mainnav-dropdown-item"><a href="#" class="header-mainnav-dropdown-link">Placeholder #1</a></li>
-              <li class="header-mainnav-dropdown-item"><a href="#" class="header-mainnav-dropdown-link">Placeholder #2</a></li>
-              <li class="header-mainnav-dropdown-item"><a href="#" class="header-mainnav-dropdown-link">Placeholder #3</a></li>
-            </div>
-          </div>
-          <div class="header-mainnav-dropdown" id="header-mainnav-dropdown-topics-container">
-            <li class="header-mainnav-dropdown-btn" id="header-mainnav-dropdown-topics-btn"><a href="#" class="header-mainnav-dropdown-linkbtn">V wybierz temat</a></li>
-            <div class="header-mainnav-dropdown-content" id="header-mainnav-dropdown-topics-content">
-              <li class="header-mainnav-dropdown-item"><a href="#" class="header-mainnav-dropdown-link">Placeholder #1</a></li>
-              <li class="header-mainnav-dropdown-item"><a href="#" class="header-mainnav-dropdown-link">Placeholder #2</a></li>
-              <li class="header-mainnav-dropdown-item"><a href="#" class="header-mainnav-dropdown-link">Placeholder #3</a></li>
-            </div>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white text-uppercase p-lg-0">
+      <div class="container-lg dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Wybierz rejon
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+          <li><a class="dropdown-item" href="#">Rejon #1</a></li>
+          <li><a class="dropdown-item" href="#">Rejon #2</a></li>
+          <li><a class="dropdown-item" href="#">Rejon #3</a></li>
         </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav-left-toggler"
+          aria-controls="mainnav-left-toggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <ul class="header-mainnav-list header-mainnav-list__desktop">
-          <li class="header-mainnav-item"><a href="#" class="header-mainnav-link">wybierz rejon</a></li>
-          <li class="header-mainnav-item"><a href="#" class="header-mainnav-link">kultura</a></li>
-          <li class="header-mainnav-item"><a href="#" class="header-mainnav-link">rozrywka</a></li>
-          <li class="header-mainnav-item"><a href="#" class="header-mainnav-link">sport</a></li>
-          <li class="header-mainnav-item"><a href="#" class="header-mainnav-link">edukacja</a></li>
-          <li class="header-mainnav-item"><a href="#" class="header-mainnav-link">historia</a></li>
-          <li class="header-mainnav-item"><a href="#" class="header-mainnav-link">zdrowie</a></li>
-          <li class="header-mainnav-item"><a href="#" class="header-mainnav-link">inwestycje</a></li>
-          <li class="header-mainnav-item"><a href="#" class="header-mainnav-link">polityka</a></li>
-          <li class="header-mainnav-item"><a href="#" class="header-mainnav-link">religia</a></li>
-          <li class="header-mainnav-item"><a href="#" class="header-mainnav-link">programy cykliczne</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="mainnav-left-toggler">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kultura</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rozrywka</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sport</a>
+            </li>
+            <li class="nav-item mr-auto">
+              <a class="nav-link" href="#">Historia</a>
+            </li>
+            <li class="nav-item mr-auto">
+              <a class="nav-link" href="#">Zdrowie</a>
+            </li>
+            <li class="nav-item mr-auto">
+              <a class="nav-link" href="#">Inwestycje</a>
+            </li>
+            <li class="nav-item mr-auto">
+              <a class="nav-link" href="#">Polityka</a>
+            </li>
+            <li class="nav-item mr-auto">
+              <a class="nav-link" href="#">Religia</a>
+            </li>
+            <li class="nav-item mr-auto">
+              <a class="nav-link" href="#">Programy cykliczne</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="big-ad container">REKLAMA 1</section>
+
+  <section class="carousel-main">
+    <div class="carousel-main-container">
+      <div class="carousel-main-item">
+        <img src="./img/carousel-main/img1.jpg" alt="landscape-1" class="carousel-main-bg">
+        <button class="carousel-main-button video-button">WIDEO</button>
+        <div class="carousel-main-label">
+          <p class="carousel-main-category">KATEGORIA / 39 minut</p>
+          <p class="carousel-main-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+        </div>
+      </div>
+      <div class="carousel-main-item">
+        <img src="./img/carousel-main/img2.jpg" alt="landscape-1" class="carousel-main-bg">
+        <button class="carousel-main-button video-button">WIDEO</button>
+        <div class="carousel-main-label">
+          <p class="carousel-main-category">KATEGORIA / 39 minut</p>
+          <p class="carousel-main-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+        </div>
+      </div>
+      <div class="carousel-main-item">
+        <img src="./img/carousel-main/img3.jpg" alt="landscape-1" class="carousel-main-bg">
+        <button class="carousel-main-button video-button">WIDEO</button>
+        <div class="carousel-main-label">
+          <p class="carousel-main-category">KATEGORIA / 39 minut</p>
+          <p class="carousel-main-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+        </div>
+      </div>
+      <div class="carousel-main-item">
+        <img src="./img/carousel-main/img4.jpg" alt="landscape-1" class="carousel-main-bg">
+        <button class="carousel-main-button video-button">WIDEO</button>
+        <div class="carousel-main-label">
+          <p class="carousel-main-category">KATEGORIA / 39 minut</p>
+          <p class="carousel-main-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+        </div>
+      </div>
+      <div class="carousel-main-item">
+        <img src="./img/carousel-main/img5.jpg" alt="landscape-1" class="carousel-main-bg">
+        <button class="carousel-main-button video-button">WIDEO</button>
+        <div class="carousel-main-label">
+          <p class="carousel-main-category">KATEGORIA / 39 minut</p>
+          <p class="carousel-main-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-main-switch-container">
+      <div class="carousel-main-switch" data-value="0"></div>
+      <div class="carousel-main-switch" data-value="1"></div>
+      <div class="carousel-main-switch" data-value="2"></div>
+      <div class="carousel-main-switch" data-value="3"></div>
+      <div class="carousel-main-switch" data-value="4"></div>
+    </div>
+  </section>
+
+  <section class="tuc">
+    <div class="container tuc-container">
+      <div class="tuc-item">
+        <img src="./img/temp.jpg" alt="temp-1" class="tuc-bg">
+        <button class="tuc-button video-button">WIDEO</button>
+        <div class="tuc-label">
+          <p class="tuc-category">KATEGORIA / 39 minut</p>
+          <p class="tuc-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+        </div>
+      </div>
+      <div class="tuc-item"><img src="./img/temp.jpg" alt="temp-1" class="tuc-bg">
+        <button class="tuc-button video-button">WIDEO</button>
+        <div class="tuc-label">
+          <p class="tuc-category">KATEGORIA / 39 minut</p>
+          <p class="tuc-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+        </div>
+      </div>
+      <div class="tuc-item"><img src="./img/temp.jpg" alt="temp-1" class="tuc-bg">
+        <button class="tuc-button video-button">WIDEO</button>
+        <div class="tuc-label">
+          <p class="tuc-category">KATEGORIA / 39 minut</p>
+          <p class="tuc-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="month-top">
+    <div class="container-fluid">
+      <div class="month-top-header section-header container mx-auto">
+        <p>TOP<span class="section-header__highlighted">miesiąca</span></p>
+      </div>
+    </div>
+    <div class="month-top-container">
+      <div class="month-top-item">
+        <div class="month-top-id">1</div>
+        <div class="month-top-info">
+          <p class="month-top-category">KATEGORIA / 39 minut</p>
+          <p class="month-top-title">Lorem ipsum dolor sit amet...</p>
+        </div>
+      </div>
+      <div class="month-top-item">
+        <div class="month-top-id">2</div>
+        <div class="month-top-info">
+          <p class="month-top-category">KATEGORIA / 39 minut</p>
+          <p class="month-top-title">Lorem ipsum dolor sit amet...</p>
+        </div>
+      </div>
+      <div class="month-top-item">
+        <div class="month-top-id">3</div>
+        <div class="month-top-info">
+          <p class="month-top-category">KATEGORIA / 39 minut</p>
+          <p class="month-top-title">Lorem ipsum dolor sit amet...</p>
+        </div>
+      </div>
+      <div class="month-top-item">
+        <div class="month-top-id">4</div>
+        <div class="month-top-info">
+          <p class="month-top-category">KATEGORIA / 39 minut</p>
+          <p class="month-top-title">Lorem ipsum dolor sit amet...</p>
+        </div>
+      </div>
+      <div class="month-top-item">
+        <div class="month-top-id">5</div>
+        <div class="month-top-info">
+          <p class="month-top-category">KATEGORIA / 39 minut</p>
+          <p class="month-top-title">Lorem ipsum dolor sit amet...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tut">
+    <div class="container tut-container">
+      <div class="row">
+        <div class="tut-item fb-item mx-1 col-lg p-0">
+          <div class="month-top-header section-header">
+            <p>facebook</p>
+          </div>
+          <div class="tut-content">
+          </div>
+        </div>
+
+        <div class="tut-item talk-item mx-1 col-lg p-0">
+          <div class="month-top-header section-header">
+            <p>Czas<span class="section-header__highlighted">na</span>rozmowę</p>
+          </div>
+          <div class="tut-content">
+          </div>
+        </div>
+
+        <div class="tut-item ad-item mx-1 col-lg p-0">
+          <div class="month-top-header tut-ad">
+            <p>reklama 2</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="big-ad container">REKLAMA 3</section>
+
+  <section class="news">
+    <div class="container">
+      <div class="row my-0 p-0">
+        <div class="news-all col-lg-8 my-0 p-0">
+          <div class="news-all-header section-header">
+            <p><span class="section-header__highlighted">Wszystkie</span>aktualności</p>
+          </div>
+
+          <div class="news-all-list">
+
+            <!-- NEWS LIST ITEM -->
+            <div class="news-all-item">
+              <div class="row m-0">
+                <div class="news-all-item-bg col-6 p-0">
+                  <button class="news-all-item-bg-button video-button">VIDEO</button>
+                  <img class="news-all-item-bg-img" src="./img/news/news01.png" alt="news-bg-01">
+                </div>
+
+                <div class="news-all-item-content col-6 p-2">
+                  <div class="news-all-label">
+                    <p class="news-all-category">KATEGORIA / 13 minut</p>
+                    <p class="news-all-description">Gość Myślenice iTV - Małgorzata Bajer oraz doktor Dagmara Ceranowic
+                    </p>
+                  </div>
+                  <p class="news-all-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vero, ad iusto
+                    molestias voluptate ea odio quasi autem tenetur praesentium ut ipsum reprehenderit amet eveniet
+                    dicta perferendis recusandae, a eum!</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- NEWS LIST ITEM -->
+            <div class="news-all-item">
+              <div class="row m-0">
+                <div class="news-all-item-bg col-6 p-0">
+                  <button class="news-all-item-bg-button video-button">VIDEO</button>
+                  <img class="news-all-item-bg-img" src="./img/news/news01.png" alt="news-bg-01">
+                </div>
+
+                <div class="news-all-item-content col-6 p-2">
+                  <div class="news-all-label">
+                    <p class="news-all-category">KATEGORIA / 13 minut</p>
+                    <p class="news-all-description">Gość Myślenice iTV - Małgorzata Bajer oraz doktor Dagmara Ceranowic
+                    </p>
+                  </div>
+                  <p class="news-all-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vero, ad iusto
+                    molestias voluptate ea odio quasi autem tenetur praesentium ut ipsum reprehenderit amet eveniet
+                    dicta perferendis recusandae, a eum!</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- NEWS LIST ITEM -->
+            <div class="news-all-item">
+              <div class="row m-0">
+                <div class="news-all-item-bg col-6 p-0">
+                  <button class="news-all-item-bg-button video-button">VIDEO</button>
+                  <img class="news-all-item-bg-img" src="./img/news/news01.png" alt="news-bg-01">
+                </div>
+
+                <div class="news-all-item-content col-6 p-2">
+                  <div class="news-all-label">
+                    <p class="news-all-category">KATEGORIA / 13 minut</p>
+                    <p class="news-all-description">Gość Myślenice iTV - Małgorzata Bajer oraz doktor Dagmara Ceranowic
+                    </p>
+                  </div>
+                  <p class="news-all-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vero, ad iusto
+                    molestias voluptate ea odio quasi autem tenetur praesentium ut ipsum reprehenderit amet eveniet
+                    dicta perferendis recusandae, a eum!</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- NEWS LIST ITEM -->
+            <div class="news-all-item">
+              <div class="row m-0">
+                <div class="news-all-item-bg col-6 p-0">
+                  <button class="news-all-item-bg-button video-button">VIDEO</button>
+                  <img class="news-all-item-bg-img" src="./img/news/news01.png" alt="news-bg-01">
+                </div>
+
+                <div class="news-all-item-content col-6 p-2">
+                  <div class="news-all-label">
+                    <p class="news-all-category">KATEGORIA / 13 minut</p>
+                    <p class="news-all-description">Gość Myślenice iTV - Małgorzata Bajer oraz doktor Dagmara Ceranowic
+                    </p>
+                  </div>
+                  <p class="news-all-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vero, ad iusto
+                    molestias voluptate ea odio quasi autem tenetur praesentium ut ipsum reprehenderit amet eveniet
+                    dicta perferendis recusandae, a eum!</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- NEWS LIST ITEM -->
+            <div class="news-all-item">
+              <div class="row m-0">
+                <div class="news-all-item-bg col-6 p-0">
+                  <button class="news-all-item-bg-button video-button">VIDEO</button>
+                  <img class="news-all-item-bg-img" src="./img/news/news01.png" alt="news-bg-01">
+                </div>
+
+                <div class="news-all-item-content col-6 p-2">
+                  <div class="news-all-label">
+                    <p class="news-all-category">KATEGORIA / 13 minut</p>
+                    <p class="news-all-description">Gość Myślenice iTV - Małgorzata Bajer oraz doktor Dagmara Ceranowic
+                    </p>
+                  </div>
+                  <p class="news-all-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vero, ad iusto
+                    molestias voluptate ea odio quasi autem tenetur praesentium ut ipsum reprehenderit amet eveniet
+                    dicta perferendis recusandae, a eum!</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- NEWS LIST ITEM -->
+            <div class="news-all-item">
+              <div class="row m-0">
+                <div class="news-all-item-bg col-6 p-0">
+                  <button class="news-all-item-bg-button video-button">VIDEO</button>
+                  <img class="news-all-item-bg-img" src="./img/news/news01.png" alt="news-bg-01">
+                </div>
+
+                <div class="news-all-item-content col-6 p-2">
+                  <div class="news-all-label">
+                    <p class="news-all-category">KATEGORIA / 13 minut</p>
+                    <p class="news-all-description">Gość Myślenice iTV - Małgorzata Bajer oraz doktor Dagmara Ceranowic
+                    </p>
+                  </div>
+                  <p class="news-all-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vero, ad iusto
+                    molestias voluptate ea odio quasi autem tenetur praesentium ut ipsum reprehenderit amet eveniet
+                    dicta perferendis recusandae, a eum!</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- NEWS LIST ITEM -->
+            <div class="news-all-item">
+              <div class="row m-0">
+                <div class="news-all-item-bg col-6 p-0">
+                  <button class="news-all-item-bg-button video-button">VIDEO</button>
+                  <img class="news-all-item-bg-img" src="./img/news/news01.png" alt="news-bg-01">
+                </div>
+
+                <div class="news-all-item-content col-6 p-2">
+                  <div class="news-all-label">
+                    <p class="news-all-category">KATEGORIA / 13 minut</p>
+                    <p class="news-all-description">Gość Myślenice iTV - Małgorzata Bajer oraz doktor Dagmara Ceranowic
+                    </p>
+                  </div>
+                  <p class="news-all-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vero, ad iusto
+                    molestias voluptate ea odio quasi autem tenetur praesentium ut ipsum reprehenderit amet eveniet
+                    dicta perferendis recusandae, a eum!</p>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="news-aside col-lg-4 my-0 p-0">
+          <div class="news-aside-container">
+            <div class="news-aside-ad">
+              <p>reklama 4 </p>
+            </div>
+
+            <div class="news-aside-upcoming">
+              <div class="news-aside-upcoming-header section-header">
+                <p><span class="section-header__highlighted">Nadchodzące</span>wydarzenia</p>
+              </div>
+            </div>
+
+            <div class="news-aside-ad">
+              <p>reklama 5</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-fluid footer-bg bg-secondary p-0">
+      <div class="container p-0">
+        <div class="footer-logo-container">
+          <img src="img/header/itv-logo-white.png" class="footer-itv-logo" alt="itv-logo">
+        </div>
       </div>
     </div>
 
 
-  </header>
-  <section class="test">
-    <div class="testdiv">
-      <label type="text" id="test1">test1</label> </br>
-      <label type="text" id="test2">test2</label> </br>
-      <label type="text" id="test3">test3</label> </br>
-      <input type="number" id="testinput">
-      <button id="testbtn">OK</button>
+    <div class="container-fluid bg-primary p-0">
+      <div class="container p-0">
+        <div class="footer-ribbon">
+          <p class="footer-ribbon-desc-left">
+            <span>Myślenice iTV</span> - Telewizja Internetowa Region Południe - Wszystkie prawa zastrzeżone - 2022
+          </p>
+          <p class="footer-ribbon-desc-right">
+            Made with <span>love!</span>
+          </p>
+        </div>
+      </div>
     </div>
-  </section>
 
-  <script src="js/main.js"></script>
+  </footer>
 </body>
 
 </html>

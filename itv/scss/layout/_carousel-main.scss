@@ -1,0 +1,136 @@
+.carousel-main {
+  position: relative;
+  height: 450px;
+  width: auto;
+  margin: 10px 0;
+  // overflow-y: hidden;
+}
+
+.carousel-main-container {
+  height: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.carousel-main-item {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  // object-fit: cover;
+}
+
+.carousel-main-bg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  // max-width: 50%;
+  // object-fit: cover;
+}
+
+.carousel-main-button,
+.carousel-main-category,
+.carousel-main-description {
+  position: absolute;
+}
+
+.carousel-main-button {
+  top: 5%;
+  right: 5%;
+}
+
+.carousel-main-label {
+  position: absolute;
+  display: inline-block;
+  font-family: $main-font;
+
+  color: white;
+
+  width: 100%;
+  padding: 5%;
+  bottom: 0%;
+  left: 0%;
+}
+
+.carousel-main-category {
+  position: relative;
+  margin: 0;
+  font-size: 1rem;
+}
+.carousel-main-description {
+  position: relative;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.carousel-main-switch-container {
+  width: 100%;
+  height: 5%;
+  margin: 10px 0;
+
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.carousel-main-switch {
+  position: static;
+  width: 10px;
+  height: 10px;
+  background-color: $blue;
+  display: block;
+  margin: 3px;
+}
+
+.carousel-main-switch.active,
+.carousel-main-switch:hover {
+  background-color: $yellow;
+}
+
+.carousel-main-switch:hover {
+  cursor: pointer;
+}
+
+.carousel-main-item.prev .carousel-main-label,
+.carousel-main-item.next .carousel-main-label {
+  // color: goldenrod;
+}
+
+.carousel-main-item.active .carousel-main-label {
+  // color: $yellow-color;
+}
+
+.carousel-main-item.fade {
+  display: none;
+}
+
+.carousel-main-item.prev {
+  order: 1;
+  // position: absolute;
+}
+.carousel-main-item.active {
+  order: 2;
+  width: 100%;
+  margin: 0 1rem;
+}
+.carousel-main-item.next {
+  order: 3;
+}
+
+.carousel-main-item.prev,
+.carousel-main-item.next {
+  // width: 100%;
+  position: relative;
+  // overflow: hidden;
+  opacity: 0.5;
+}
+
+.carousel-main-item.prev,
+.carousel-main-item.next,
+.carousel-main-item.active {
+  
+}

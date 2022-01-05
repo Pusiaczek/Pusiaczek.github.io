@@ -1,49 +1,24 @@
-// $gray-color: #30383b;
-// $purple-color:#473452;
+$main-font: "Roboto", sans-serif;
+$secondary-font: "Bellota", cursive;
 
-$blue-color:#143468;
-$light-blue-color: #244276;
-$red-color: #d90000;
-$yellow-color: #e6d300;
+// $blue-color: #143468;
+// $light-blue-color: rgb(36, 66, 118);
+// $red-color: #d90000;
+// $yellow-color: #e6d300;
 
+// $default-font-size: 16px;
+// $navbar-font-size: 15px;
+// $section-header-font-size: 42px;
+// $main-section-title-font-size: 50px;
+// $card-header-font-size: 22px;
 
-$default-font-size: 16px;
-$navbar-font-size: 15px;
-$section-header-font-size: 42px;
-$main-section-title-font-size: 50px;
-$card-header-font-size: 22px;
+// $xsm-max-size: calc(425px + 1px);
+// $sm-max-size: calc(768px + 1px);
+// $md-max-size: calc(1024px + 1px);
+// $lg-max-size: calc(1200px + 1px);
 
-$topnav-items-margin: 2.5rem;
-
-
-
-$xsm-max-size: calc(425px + 1px);
-$sm-max-size: calc(768px + 1px);
-$md-max-size: calc(1024px + 1px);
-$lg-max-size: calc(1200px + 1px);
-
-$container-width-xsm: 100%;
-$container-width-sm: 95%;
-$container-width-md: 760px;
-$container-width-lg: 968px;
-$container-width-xlg: 1200px;
-
-$main-font: 'Roboto', sans-serif;
-$secondary-font: 'Bellota', cursive;
-
-.testdiv {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 80%;
-  overflow: hidden;
-  margin: auto;
-  padding: 5px;
-  border: 1px solid plum;
-}
-
-.testdiv label {
-  margin: 5px;
-  padding: 5px;
-  border: 1px solid black;
-}
+// $container-width-xsm: 100%;
+// $container-width-sm: 95%;
+// $container-width-md: 760px;
+// $container-width-lg: 968px;
+// $container-width-xlg: 1200px;

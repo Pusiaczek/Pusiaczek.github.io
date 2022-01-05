@@ -9,81 +9,29 @@ body {
   font-size: 16px;
 }
 
-.container {
-  width: $container-width-xsm;
-  margin: auto;
-}
+// .dupa {
+  // color: blue;
 
-a {
-  text-decoration: none;
-  color: inherit;
-  font-family: inherit;
-}
-
-// p, input {
-//     font-family: $Roboto;
-//     color: $gray-color;
-//     padding-bottom: 15px;
-//     font-weight: 300;
-
-// }
-
-// h1, h2, h3, h4 {
-//     font-family: $Bellota;
-//     color: $purple-color;
-// }
-
-// h1 {
-//     font-size: $main-section-title-font-size;
-// }
-
-// h2 {
-//     font-size: $section-header-font-size;
-// }
-
-// h3 {
-//     font-size: $card-header-font-size;
-// }
-
-// ul {
-//     padding: 0;
-// }
-
-// section {
-//     padding: 30px 0;
-// }
-
-// .text-center {
-//     text-align: center;
-// }
-
-@media (min-width: $xsm-max-size) {
-  .container {
-    width: $container-width-sm;
-  }
-  // section {
-  //     padding: 60px 0;
+  // @include media-breakpoint-up(sm) {
+  //   color: $teal;
   // }
-}
+  // @include media-breakpoint-up(lg) {
+  //   color: $cyan;
+  // }
+// }
 
-@media (min-width: $sm-max-size) {
-  .container {
-    width: $container-width-md;
-  }
-}
+// @include media-breakpoint-up(sm) {
 
-@media (min-width: $md-max-size) {
-  .container {
-    width: $container-width-lg;
-  }
-}
+//  }
+// @include media-breakpoint-up(md) {
 
-@media (min-width: $lg-max-size) {
-  .container {
-    width: $container-width-xlg;
-  }
-}
-// @media (min-width: $xsm-max-size) {
-// @media (min-width: $sm-max-size) {
-// @media (min-width: $md-max-size) {
-// @media (min-width: $lg-max-size) {
+//  }
+// @include media-breakpoint-up(lg) {
+
+//  }
+// @include media-breakpoint-up(xl) {
+
+//  }
+// @include media-breakpoint-up(xxl) {
+
+//  }
