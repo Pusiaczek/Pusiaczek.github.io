@@ -12203,48 +12203,43 @@ section {
 .carousel-main {
   position: relative;
   height: 450px;
-  width: auto;
   margin: 10px 0;
 }
 
 .carousel-main-container {
-  height: 95%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 90%;
 }
 
-.carousel-main-item {
-  position: relative;
+.carousel-main-container .owl-stage-outer,
+.carousel-main-container .owl-stage,
+.carousel-main-container .owl-item {
   height: 100%;
-  width: 50%;
 }
 
-.carousel-main-bg {
-  position: relative;
+.carousel-main-container .carousel-main-item {
   height: 100%;
-  width: 100%;
 }
 
-.carousel-main-button,
-.carousel-main-category,
-.carousel-main-description {
+.carousel-main-container .carousel-main-item .carousel-main-button,
+.carousel-main-container .carousel-main-item .carousel-main-category,
+.carousel-main-container .carousel-main-item .carousel-main-description {
   position: absolute;
 }
 
-.carousel-main-button {
+.carousel-main-container .carousel-main-item .carousel-main-bg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-main-container .carousel-main-item .carousel-main-button {
   top: 5%;
   right: 5%;
 }
 
-.carousel-main-label {
+.carousel-main-container .carousel-main-item .carousel-main-label {
   position: absolute;
   display: inline-block;
   font-family: "Roboto Condensed", sans-serif;
@@ -12255,82 +12250,17 @@ section {
   left: 0%;
 }
 
-.carousel-main-category {
+.carousel-main-container .carousel-main-item .carousel-main-category {
   position: relative;
   margin: 0;
   font-size: 1rem;
 }
 
-.carousel-main-description {
+.carousel-main-container .carousel-main-item .carousel-main-description {
   position: relative;
   margin: 0;
   font-size: 2rem;
   font-weight: 600;
-}
-
-.carousel-main-switch-container {
-  width: 100%;
-  height: 5%;
-  margin: 10px 0;
-  position: static;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.carousel-main-switch {
-  position: static;
-  width: 10px;
-  height: 10px;
-  background-color: #143468;
-  display: block;
-  margin: 3px;
-}
-
-.carousel-main-switch.active,
-.carousel-main-switch:hover {
-  background-color: #e6d300;
-}
-
-.carousel-main-switch:hover {
-  cursor: pointer;
-}
-
-.carousel-main-item.fade {
-  display: none;
-}
-
-.carousel-main-item.prev {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-.carousel-main-item.active {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  width: 100%;
-  margin: 0 1rem;
-}
-
-.carousel-main-item.next {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
-}
-
-.carousel-main-item.prev,
-.carousel-main-item.next {
-  position: relative;
-  opacity: 0.5;
 }
 
 .tuc {

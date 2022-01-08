@@ -7,7 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iTV</title>
   <script src="https://kit.fontawesome.com/ad74a8bc0d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./js/assets/owl.carousel.css">
+  <link rel="stylesheet" href="./js/assets/owl.theme.default.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./js/bootstrap.bundle.js" defer></script>
+  <script src="./js/owl.carousel.js" defer></script>
+  <script src="./js/script.js" defer></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -125,55 +131,64 @@
   <section class="big-ad container">REKLAMA 1</section>
 
   <section class="carousel-main">
-    <div class="carousel-main-container">
-      <div class="carousel-main-item">
-        <img src="./img/carousel-main/img1.jpg" alt="landscape-1" class="carousel-main-bg">
-        <button class="carousel-main-button video-button">WIDEO</button>
-        <div class="carousel-main-label">
-          <p class="carousel-main-category">KATEGORIA / 39 minut</p>
-          <p class="carousel-main-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+    <div class="carousel-main-container owl-carousel owl-theme">
+
+        <div class="carousel-main-item card">
+          <img src="./img/carousel-main/img1.jpg" alt="landscape-1" class="carousel-main-bg">
+          <button class="carousel-main-button video-button">WIDEO</button>
+          <div class="carousel-main-label">
+            <p class="carousel-main-category">KATEGORIA / 39 minut</p>
+            <p class="carousel-main-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+          </div>
         </div>
-      </div>
-      <div class="carousel-main-item">
-        <img src="./img/carousel-main/img2.jpg" alt="landscape-1" class="carousel-main-bg">
-        <button class="carousel-main-button video-button">WIDEO</button>
-        <div class="carousel-main-label">
-          <p class="carousel-main-category">KATEGORIA / 39 minut</p>
-          <p class="carousel-main-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+      
+        <div class="carousel-main-item card">
+          <img src="./img/carousel-main/img2.jpg" alt="landscape-1" class="carousel-main-bg">
+          <button class="carousel-main-button video-button">WIDEO</button>
+          <div class="carousel-main-label">
+            <p class="carousel-main-category">KATEGORIA / 39 minut</p>
+            <p class="carousel-main-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+          </div>
         </div>
-      </div>
-      <div class="carousel-main-item">
-        <img src="./img/carousel-main/img3.jpg" alt="landscape-1" class="carousel-main-bg">
-        <button class="carousel-main-button video-button">WIDEO</button>
-        <div class="carousel-main-label">
-          <p class="carousel-main-category">KATEGORIA / 39 minut</p>
-          <p class="carousel-main-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+      
+        <div class="carousel-main-item card">
+          <img src="./img/carousel-main/img3.jpg" alt="landscape-1" class="carousel-main-bg">
+          <button class="carousel-main-button video-button">WIDEO</button>
+          <div class="carousel-main-label">
+            <p class="carousel-main-category">KATEGORIA / 39 minut</p>
+            <p class="carousel-main-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+          </div>
         </div>
-      </div>
-      <div class="carousel-main-item">
-        <img src="./img/carousel-main/img4.jpg" alt="landscape-1" class="carousel-main-bg">
-        <button class="carousel-main-button video-button">WIDEO</button>
-        <div class="carousel-main-label">
-          <p class="carousel-main-category">KATEGORIA / 39 minut</p>
-          <p class="carousel-main-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+      
+        <div class="carousel-main-item card">
+          <img src="./img/carousel-main/img4.jpg" alt="landscape-1" class="carousel-main-bg">
+          <button class="carousel-main-button video-button">WIDEO</button>
+          <div class="carousel-main-label">
+            <p class="carousel-main-category">KATEGORIA / 39 minut</p>
+            <p class="carousel-main-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+          </div>
         </div>
-      </div>
-      <div class="carousel-main-item">
-        <img src="./img/carousel-main/img5.jpg" alt="landscape-1" class="carousel-main-bg">
-        <button class="carousel-main-button video-button">WIDEO</button>
-        <div class="carousel-main-label">
-          <p class="carousel-main-category">KATEGORIA / 39 minut</p>
-          <p class="carousel-main-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+      
+        <div class="carousel-main-item card">
+          <img src="./img/carousel-main/img5.jpg" alt="landscape-1" class="carousel-main-bg">
+          <button class="carousel-main-button video-button">WIDEO</button>
+          <div class="carousel-main-label">
+            <p class="carousel-main-category">KATEGORIA / 39 minut</p>
+            <p class="carousel-main-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+          </div>
         </div>
-      </div>
+      
+
     </div>
-    <div class="carousel-main-switch-container">
+
+    <!-- <div class="carousel-main-switch-container">
       <div class="carousel-main-switch" data-value="0"></div>
       <div class="carousel-main-switch" data-value="1"></div>
       <div class="carousel-main-switch" data-value="2"></div>
       <div class="carousel-main-switch" data-value="3"></div>
       <div class="carousel-main-switch" data-value="4"></div>
-    </div>
+    </div> -->
+
   </section>
 
   <section class="tuc">
