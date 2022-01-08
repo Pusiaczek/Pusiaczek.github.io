@@ -15,15 +15,15 @@ footer p {
   color: white;
 }
 
-.footer-ribbon-desc-left span {
+.footer-ribbon-info span {
   font-weight: 700;
 }
 
-.footer-ribbon-desc-right {
+.footer-ribbon-madewithlove {
   font-weight: 700;
 }
 
-.footer-ribbon-desc-right span {
+.footer-ribbon-madewithlove span {
   color: $red;
 }
 
@@ -31,20 +31,6 @@ footer p {
   position: relative;
 }
 
-.footer-bg::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.3;
-  background-image: url("../img/footer/footer-bg.png");
-  background-repeat: no-repeat;
-  background-position: 110% 0;
-  background-size: contain;
-}
 
 .footer-logo-container {
   height: 325px;
@@ -53,7 +39,38 @@ footer p {
 }
 
 .footer-itv-logo {
-  width: 35%;
-  margin-left: 5%;
+  width: 75%;
+  margin: 0 auto;
   cursor: pointer;
+}
+
+
+
+
+@include media-breakpoint-up(md) {
+  .footer-itv-logo {
+    width: 400px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .footer-bg::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url("../img/footer/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: 110% 0;
+    background-size: contain;
+  }
+
+  .footer-itv-logo {
+    width: 400px;
+    margin-left: 5%;
+  }
 }

@@ -1,15 +1,26 @@
 .header-main {
   height: 220px;
   background-color: $light-blue;
-  // background-image: 
+  position: relative;
 } 
+
+.header-main::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-image: radial-gradient(circle at 30% 0%, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0) 75%);
+  background-repeat: no-repeat;
+  // background-position: 110% 0;
+  // background-size: contain;
+}
 
 .header-main-container {
   height: 100%;
   display: flex;
-  background-image: url("../img/header/header-bg.png"), radial-gradient(circle at 30% 0%, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0) 75%);;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .header-main-itv-logo {
@@ -25,11 +36,17 @@
 
 @include media-breakpoint-up(md) {
   .header-main-itv-logo {
-    width: 320px;
+    width: 400px;
   }
 }
 
 @include media-breakpoint-up(lg) {
+  .header-main-container {
+    background-image: url("../img/header/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
   .header-main-socials {
     display: flex;
     justify-content: end;
@@ -46,7 +63,7 @@
   }
 
   .header-main-itv-logo {
-    width: 350px;
+    width: 400px;
     margin-left: 5%;
   }
 }

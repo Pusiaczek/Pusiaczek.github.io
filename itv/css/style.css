@@ -4,6 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&family=Roboto:wght@100;300;400;500;700&display=swap");
 :root {
   --bs-blue: #143468;
@@ -11965,8 +11966,12 @@ fieldset:disabled .btn {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
+}
+
+section {
+  margin-top: 3rem;
 }
 
 .socials-container {
@@ -12018,7 +12023,7 @@ body {
   color: white;
   margin: 10px 0;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   background-color: #244276;
 }
 
@@ -12040,9 +12045,23 @@ body {
   background-color: #244376;
   color: white;
   padding: 5px 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.75rem;
   font-weight: 600;
   border: none;
+}
+
+.video-button:hover {
+  background-color: #e6d300;
+  color: black;
+}
+
+.topnav {
+  min-height: 42px;
+}
+
+.topnav-list {
+  font-size: 0.75rem;
 }
 
 .topnav-socials {
@@ -12066,7 +12085,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   color: white;
   cursor: pointer;
 }
@@ -12112,6 +12131,19 @@ body {
 .header-main {
   height: 220px;
   background-color: #244276;
+  position: relative;
+}
+
+.header-main::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-image: radial-gradient(circle at 30% 0%, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0) 75%);
+  background-repeat: no-repeat;
 }
 
 .header-main-container {
@@ -12119,9 +12151,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url("../img/header/header-bg.png"), radial-gradient(circle at 30% 0%, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0) 75%);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .header-main-itv-logo {
@@ -12136,11 +12165,16 @@ body {
 
 @media (min-width: 768px) {
   .header-main-itv-logo {
-    width: 320px;
+    width: 400px;
   }
 }
 
 @media (min-width: 992px) {
+  .header-main-container {
+    background-image: url("../img/header/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
   .header-main-socials {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -12157,9 +12191,13 @@ body {
     color: white;
   }
   .header-main-itv-logo {
-    width: 350px;
+    width: 400px;
     margin-left: 5%;
   }
+}
+
+.main-navbar-dropdown {
+  color: rgba(0, 0, 0, 0.55);
 }
 
 .carousel-main {
@@ -12209,7 +12247,7 @@ body {
 .carousel-main-label {
   position: absolute;
   display: inline-block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   color: white;
   width: 100%;
   padding: 5%;
@@ -12301,23 +12339,12 @@ body {
 }
 
 .tuc-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  gap: 1rem;
   height: 100%;
 }
 
 .tuc-item {
   position: relative;
   height: 100%;
-  width: 33%;
 }
 
 .tuc-bg {
@@ -12342,7 +12369,7 @@ body {
 .tuc-label {
   position: absolute;
   display: inline-block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   color: white;
   width: 100%;
   padding: 5%;
@@ -12412,7 +12439,7 @@ body {
   color: white;
   text-align: center;
   font-size: 1.2rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
 }
 
@@ -12434,7 +12461,7 @@ body {
 
 .news-all-item {
   width: 100%;
-  margin: 10px 0;
+  margin: 1.5rem 0;
 }
 
 .news-all-item-bg {
@@ -12460,7 +12487,7 @@ body {
 }
 
 .news-all-label {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   width: 100%;
 }
 
@@ -12502,35 +12529,20 @@ footer p {
   color: white;
 }
 
-.footer-ribbon-desc-left span {
+.footer-ribbon-info span {
   font-weight: 700;
 }
 
-.footer-ribbon-desc-right {
+.footer-ribbon-madewithlove {
   font-weight: 700;
 }
 
-.footer-ribbon-desc-right span {
+.footer-ribbon-madewithlove span {
   color: #d90000;
 }
 
 .footer-bg {
   position: relative;
-}
-
-.footer-bg::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.3;
-  background-image: url("../img/footer/footer-bg.png");
-  background-repeat: no-repeat;
-  background-position: 110% 0;
-  background-size: contain;
 }
 
 .footer-logo-container {
@@ -12544,8 +12556,35 @@ footer p {
 }
 
 .footer-itv-logo {
-  width: 35%;
-  margin-left: 5%;
+  width: 75%;
+  margin: 0 auto;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .footer-itv-logo {
+    width: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-bg::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url("../img/footer/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: 110% 0;
+    background-size: contain;
+  }
+  .footer-itv-logo {
+    width: 400px;
+    margin-left: 5%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

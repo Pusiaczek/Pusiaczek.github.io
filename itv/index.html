@@ -13,8 +13,8 @@
 
 <body>
   <header>
-    <nav class="topnav navbar navbar-expand-lg navbar-dark bg-primary text-uppercase text-white p-lg-0">
-      <div class="container-lg ">
+    <nav class="topnav navbar navbar-expand-lg navbar-dark bg-primary text-white p-lg-0">
+      <div class="container-lg">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topnav-toggler"
           aria-controls="topnav-toggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,8 +27,8 @@
           </div>
         </div>
 
-        <div class="collapse navbar-collapse" id="topnav-toggler">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse topnav-list" id="topnav-toggler">
+          <ul class="navbar-nav text-uppercase me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">O nas</a>
             </li>
@@ -71,9 +71,9 @@
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white text-uppercase p-lg-0">
-      <div class="container-lg dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-          data-bs-toggle="dropdown" aria-expanded="false">
+      <div class="container-lg dropdown text-center">
+        <a class="nav-link dropdown-toggle p-1 main-navbar-dropdown" href="#" id="navbarDarkDropdownMenuLink"
+          role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Wybierz rejon
         </a>
         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
@@ -81,6 +81,7 @@
           <li><a class="dropdown-item" href="#">Rejon #2</a></li>
           <li><a class="dropdown-item" href="#">Rejon #3</a></li>
         </ul>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav-left-toggler"
           aria-controls="mainnav-left-toggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -177,27 +178,35 @@
 
   <section class="tuc">
     <div class="container tuc-container">
-      <div class="tuc-item">
-        <img src="./img/temp.jpg" alt="temp-1" class="tuc-bg">
-        <button class="tuc-button video-button">WIDEO</button>
-        <div class="tuc-label">
-          <p class="tuc-category">KATEGORIA / 39 minut</p>
-          <p class="tuc-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+      <div class="row h-100">
+        <div class="tuc-item d-lg-inline-block col-lg">
+          <img src="./img/temp.jpg" alt="temp-1" class="tuc-bg">
+          <!-- <div class="tuc-bg tuc-bg-hover"></div> -->
+          <button class="tuc-button video-button">WIDEO</button>
+          <div class="tuc-label">
+            <p class="tuc-category">KATEGORIA / 39 minut</p>
+            <p class="tuc-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+          </div>
         </div>
-      </div>
-      <div class="tuc-item"><img src="./img/temp.jpg" alt="temp-1" class="tuc-bg">
-        <button class="tuc-button video-button">WIDEO</button>
-        <div class="tuc-label">
-          <p class="tuc-category">KATEGORIA / 39 minut</p>
-          <p class="tuc-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+
+        <div class="tuc-item d-none d-lg-inline-block col-lg">
+          <img src="./img/temp.jpg" alt="temp-1" class="tuc-bg">
+          <button class="tuc-button video-button">WIDEO</button>
+          <div class="tuc-label">
+            <p class="tuc-category">KATEGORIA / 39 minut</p>
+            <p class="tuc-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+          </div>
         </div>
-      </div>
-      <div class="tuc-item"><img src="./img/temp.jpg" alt="temp-1" class="tuc-bg">
-        <button class="tuc-button video-button">WIDEO</button>
-        <div class="tuc-label">
-          <p class="tuc-category">KATEGORIA / 39 minut</p>
-          <p class="tuc-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+
+        <div class="tuc-item d-none d-lg-inline-block col-lg">
+          <img src="./img/temp.jpg" alt="temp-1" class="tuc-bg">
+          <button class="tuc-button video-button">WIDEO</button>
+          <div class="tuc-label">
+            <p class="tuc-category">KATEGORIA / 39 minut</p>
+            <p class="tuc-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</p>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -250,7 +259,7 @@
   <section class="tut">
     <div class="container tut-container">
       <div class="row">
-        <div class="tut-item fb-item mx-1 col-lg p-0">
+        <div class="tut-item fb-item mx-1 col-lg order-lg-1">
           <div class="month-top-header section-header">
             <p>facebook</p>
           </div>
@@ -258,7 +267,13 @@
           </div>
         </div>
 
-        <div class="tut-item talk-item mx-1 col-lg p-0">
+        <div class="tut-item ad-item mx-1 col-lg order-lg-3">
+          <div class="month-top-header tut-ad">
+            <p>reklama 2</p>
+          </div>
+        </div>
+
+        <div class="tut-item talk-item mx-1 col-lg order-lg-2">
           <div class="month-top-header section-header">
             <p>Czas<span class="section-header__highlighted">na</span>rozmowę</p>
           </div>
@@ -266,11 +281,7 @@
           </div>
         </div>
 
-        <div class="tut-item ad-item mx-1 col-lg p-0">
-          <div class="month-top-header tut-ad">
-            <p>reklama 2</p>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
@@ -279,8 +290,8 @@
 
   <section class="news">
     <div class="container">
-      <div class="row my-0 p-0">
-        <div class="news-all col-lg-8 my-0 p-0">
+      <div class="row my-0">
+        <div class="news-all col-lg-8 my-0">
           <div class="news-all-header section-header">
             <p><span class="section-header__highlighted">Wszystkie</span>aktualności</p>
           </div>
@@ -290,7 +301,7 @@
             <!-- NEWS LIST ITEM -->
             <div class="news-all-item">
               <div class="row m-0">
-                <div class="news-all-item-bg col-6 p-0">
+                <div class="news-all-item-bg col-6">
                   <button class="news-all-item-bg-button video-button">VIDEO</button>
                   <img class="news-all-item-bg-img" src="./img/news/news01.png" alt="news-bg-01">
                 </div>
@@ -311,7 +322,7 @@
             <!-- NEWS LIST ITEM -->
             <div class="news-all-item">
               <div class="row m-0">
-                <div class="news-all-item-bg col-6 p-0">
+                <div class="news-all-item-bg col-6">
                   <button class="news-all-item-bg-button video-button">VIDEO</button>
                   <img class="news-all-item-bg-img" src="./img/news/news01.png" alt="news-bg-01">
                 </div>
@@ -332,7 +343,7 @@
             <!-- NEWS LIST ITEM -->
             <div class="news-all-item">
               <div class="row m-0">
-                <div class="news-all-item-bg col-6 p-0">
+                <div class="news-all-item-bg col-6">
                   <button class="news-all-item-bg-button video-button">VIDEO</button>
                   <img class="news-all-item-bg-img" src="./img/news/news01.png" alt="news-bg-01">
                 </div>
@@ -353,7 +364,7 @@
             <!-- NEWS LIST ITEM -->
             <div class="news-all-item">
               <div class="row m-0">
-                <div class="news-all-item-bg col-6 p-0">
+                <div class="news-all-item-bg col-6">
                   <button class="news-all-item-bg-button video-button">VIDEO</button>
                   <img class="news-all-item-bg-img" src="./img/news/news01.png" alt="news-bg-01">
                 </div>
@@ -374,7 +385,7 @@
             <!-- NEWS LIST ITEM -->
             <div class="news-all-item">
               <div class="row m-0">
-                <div class="news-all-item-bg col-6 p-0">
+                <div class="news-all-item-bg col-6">
                   <button class="news-all-item-bg-button video-button">VIDEO</button>
                   <img class="news-all-item-bg-img" src="./img/news/news01.png" alt="news-bg-01">
                 </div>
@@ -395,7 +406,7 @@
             <!-- NEWS LIST ITEM -->
             <div class="news-all-item">
               <div class="row m-0">
-                <div class="news-all-item-bg col-6 p-0">
+                <div class="news-all-item-bg col-6">
                   <button class="news-all-item-bg-button video-button">VIDEO</button>
                   <img class="news-all-item-bg-img" src="./img/news/news01.png" alt="news-bg-01">
                 </div>
@@ -416,7 +427,7 @@
             <!-- NEWS LIST ITEM -->
             <div class="news-all-item">
               <div class="row m-0">
-                <div class="news-all-item-bg col-6 p-0">
+                <div class="news-all-item-bg col-6">
                   <button class="news-all-item-bg-button video-button">VIDEO</button>
                   <img class="news-all-item-bg-img" src="./img/news/news01.png" alt="news-bg-01">
                 </div>
@@ -439,7 +450,7 @@
           </div>
         </div>
 
-        <div class="news-aside col-lg-4 my-0 p-0">
+        <div class="news-aside col-lg-4 my-0">
           <div class="news-aside-container">
             <div class="news-aside-ad">
               <p>reklama 4 </p>
@@ -463,8 +474,8 @@
   </section>
 
   <footer>
-    <div class="container-fluid footer-bg bg-secondary p-0">
-      <div class="container p-0">
+    <div class="container-fluid footer-bg bg-secondary">
+      <div class="container">
         <div class="footer-logo-container">
           <img src="img/header/itv-logo-white.png" class="footer-itv-logo" alt="itv-logo">
         </div>
@@ -472,15 +483,22 @@
     </div>
 
 
-    <div class="container-fluid bg-primary p-0">
+    <div class="container-fluid bg-primary">
+
       <div class="container p-0">
-        <div class="footer-ribbon">
-          <p class="footer-ribbon-desc-left">
-            <span>Myślenice iTV</span> - Telewizja Internetowa Region Południe - Wszystkie prawa zastrzeżone - 2022
-          </p>
-          <p class="footer-ribbon-desc-right">
-            Made with <span>love!</span>
-          </p>
+        <div class="footer-ribbon row text-center">
+
+          <div class="col-md-4 text-md-end order-md-2">
+            <p class="footer-ribbon-madewithlove">
+              Made with <span>love!</span>
+            </p>
+          </div>
+          <div class="col-md-8 text-md-start order-md-1">
+            <p class="footer-ribbon-info">
+              <span>Myślenice iTV</span> - Telewizja Internetowa Region Południe - Wszystkie prawa zastrzeżone - 2022
+            </p>
+          </div>
+
         </div>
       </div>
     </div>

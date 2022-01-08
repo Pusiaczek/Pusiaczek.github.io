@@ -1,6 +1,5 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-
 @import "utils/fonts";
 @import "utils/variables";
 
@@ -11,6 +10,7 @@
 
 @import "layout/topnav";
 @import "layout/header-main";
+@import "layout/main-navbar";
 @import "layout/carousel-main";
 @import 'layout/tuc';
 @import 'layout/month-top';

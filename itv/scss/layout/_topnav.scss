@@ -1,5 +1,9 @@
 .topnav {
-  // height: 60px;
+  min-height: 42px;
+}
+
+.topnav-list {
+  font-size: 0.75rem;
 }
 
 .topnav-socials {
@@ -15,7 +19,7 @@
   justify-content: end;
   align-items: center;
 
-  font-size: 0.7rem;
+  font-size: 0.75rem;
 
   color: white;
   cursor: pointer;
