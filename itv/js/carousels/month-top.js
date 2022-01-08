@@ -1,31 +1,34 @@
 (function () {
   "use strict";
 
-  var carousels = function () {
-    $(".carousel-main-container").owlCarousel({
+  var monthTopCarousel = function () {
+    $(".month-top-container").owlCarousel({
       loop: true,
       center: true,
       margin: 0,
       responsiveClass: true,
+      responsiveRefreshRate: 200,
       nav: false,
-      dots: true,
+      dots: false,
+      dotsEach: false,
       autoplay: true,
       autoplayTimeout: 2000,
       autoplayHoverPause: true,
       responsive: {
         0: {
           items: 1,
-          stagePadding: 0,
         },
         768: {
-          items: 1,
-          stagePadding: 100,
+          items: 3,
+        },
+        992: {
+          items: 5,
         }
       }
     });
   };
 
   (function ($) {
-    carousels();
+    monthTopCarousel();
   })(jQuery);
 })();

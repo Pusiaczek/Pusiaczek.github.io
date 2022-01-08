@@ -3,19 +3,23 @@
 }
 
 .month-top-container {
-  display: flex;
-  height: 100px;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
+  height: 80px;
+
+  .owl-stage-outer,
+  .owl-stage,
+  .owl-item {
+    height: 100%;
+  }
+
+
 }
 
-
 .month-top-item {
-  width: 500px;
+  height: 100%;
   display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
 }
 
 .month-top-id {
@@ -25,14 +29,13 @@
   height: 40%;
   aspect-ratio: 1/1;
   margin: 10px;
-  
+
   background-color: $light-blue;
   color: white;
   text-align: center;
   font-size: 1.2rem;
   font-family: $main-font;
   font-weight: 700;
-
 }
 
 .month-top-info {
@@ -41,8 +44,10 @@
 
 .month-top-category {
   font-size: 0.75rem;
+  margin: 0;
 }
 
 .month-top-title {
   font-weight: 700;
+  margin: 0;
 }

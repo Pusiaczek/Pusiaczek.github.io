@@ -11971,7 +11971,7 @@ body {
 }
 
 section {
-  margin-top: 3rem;
+  margin: 1rem 0;
 }
 
 .socials-container {
@@ -12325,31 +12325,29 @@ section {
 }
 
 .month-top-container {
+  height: 80px;
+}
+
+.month-top-container .owl-stage-outer,
+.month-top-container .owl-stage,
+.month-top-container .owl-item {
+  height: 100%;
+}
+
+.month-top-item {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-
-.month-top-item {
-  width: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .month-top-id {
@@ -12379,10 +12377,12 @@ section {
 
 .month-top-category {
   font-size: 0.75rem;
+  margin: 0;
 }
 
 .month-top-title {
   font-weight: 700;
+  margin: 0;
 }
 
 .tut-item {
