@@ -78,24 +78,29 @@
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white text-uppercase p-lg-0">
-      <div class="container-lg dropdown text-center">
-        <a class="nav-link dropdown-toggle p-1 main-navbar-dropdown" href="#" id="navbarDarkDropdownMenuLink"
-          role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Wybierz rejon
-        </a>
-        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-          <li><a class="dropdown-item" href="#">Rejon #1</a></li>
-          <li><a class="dropdown-item" href="#">Rejon #2</a></li>
-          <li><a class="dropdown-item" href="#">Rejon #3</a></li>
-        </ul>
+      <div class="container-lg text-center justify-content-around justify-content-lg-center dropdown">
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle p-1 main-navbar-dropdown" data-bs-toggle="dropdown" href="#" id="navbarDarkDropdownMenuLink"
+            role="button"  aria-expanded="false">
+            Wybierz rejon
+          </a>
+  
+          <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Rejon #1</a></li>
+            <li><a class="dropdown-item" href="#">Rejon #2</a></li>
+            <li><a class="dropdown-item" href="#">Rejon #3</a></li>
+          </ul>
+        </div>
+
+
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav-left-toggler"
           aria-controls="mainnav-left-toggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="mainnav-left-toggler">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse flex-grow-0" id="mainnav-left-toggler">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="#">Kultura</a>
             </li>

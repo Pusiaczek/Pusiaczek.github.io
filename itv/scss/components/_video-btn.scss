@@ -1,5 +1,6 @@
 .video-button {
-  background-color: rgb(36, 67, 118);
+  // background-color: rgb(36, 67, 118);
+  background-color: #3f3c97;
   color: white;
   padding: 5px 20px;
   font-family: $main-font;
@@ -11,4 +12,5 @@
 .video-button:hover {
   background-color: $yellow;
   color: black;
+  transition: all 0.3s ease-in-out;
 }
