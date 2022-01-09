@@ -1,9 +1,16 @@
 DO POPRAWY:
 
-1. Navbar - stylowanie wysrodkowanie, stylowanie dropdownu
-2. Główna karuzela - ogarnąć skrypt i zaimplementować go
-3. Gdzie jest więcej karuzel, sliderow itp itd?
+1. Navbar - stylowanie wysrodkowanie, stylowanie dropdownu +
+2. Główna karuzela - ogarnąć skrypt i zaimplementować go +
+3. Gdzie jest więcej karuzel, sliderow itp itd? +
 4. Ikonka Live w górnym pasku (w sumie był moment, że ona tam była i działała o.O)
-5. Poprawić marginesy w nagłówkach sekcji (w zależności od pożądanego zachowania)
+5. Poprawić marginesy w nagłówkach sekcji (w zależności od pożądanego zachowania) +/-
 
-6. Nadchodzące wydarzenie, caly komponent
+6. Nadchodzące wydarzenie, caly komponent -
+
+
+DO POPRAWY 09.01.2022
+
+1. Nadchodzące wydarzenie, caly komponent
+2. Ikonka Live w górnym pasku (w sumie był moment, że ona tam była i działała o.O)
+3. Pasek z info na nawigacji

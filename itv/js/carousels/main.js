@@ -5,14 +5,14 @@
     $(".carousel-main-container").owlCarousel({
       loop: true,
       center: true,
-      margin: 0,
+      margin: 25,
       responsiveClass: true,
       responsiveRefreshRate: 200,
       nav: false,
       dots: true,
       dotsEach: true,
       autoplay: true,
-      autoplayTimeout: 2000,
+      autoplayTimeout: 2500,
       autoplayHoverPause: true,
       responsive: {
         0: {

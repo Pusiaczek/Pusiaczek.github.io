@@ -11971,7 +11971,7 @@ body {
 }
 
 section {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .socials-container {
@@ -11992,7 +11992,8 @@ section {
 }
 
 .big-ad {
-  margin: 10px auto;
+  margin-bottom: 10px;
+  margin-top: 0;
   background-color: #ebfd99;
   height: 216px;
   display: block;
@@ -12207,7 +12208,6 @@ section {
 .carousel-main {
   position: relative;
   height: 450px;
-  margin: 10px 0;
 }
 
 .carousel-main-container {
@@ -12218,6 +12218,18 @@ section {
 .carousel-main-container .owl-stage,
 .carousel-main-container .owl-item {
   height: 100%;
+}
+
+.carousel-main-container .owl-item {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-main-container .owl-item.center {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .carousel-main-container .carousel-main-item {
