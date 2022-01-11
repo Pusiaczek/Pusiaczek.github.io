@@ -10,17 +10,17 @@ body {
 }
 
 section {
-  margin: 1.5rem 0;
+  margin: 3rem 0;
 }
 // .dupa {
-  // color: blue;
+// color: blue;
 
-  // @include media-breakpoint-up(sm) {
-  //   color: $teal;
-  // }
-  // @include media-breakpoint-up(lg) {
-  //   color: $cyan;
-  // }
+// @include media-breakpoint-up(sm) {
+//   color: $teal;
+// }
+// @include media-breakpoint-up(lg) {
+//   color: $cyan;
+// }
 // }
 
 // @include media-breakpoint-up(sm) {
@@ -29,9 +29,11 @@ section {
 // @include media-breakpoint-up(md) {
 
 //  }
-// @include media-breakpoint-up(lg) {
-
-//  }
+@include media-breakpoint-up(lg) {
+  section {
+    margin: 1.5rem 0;
+  }
+}
 // @include media-breakpoint-up(xl) {
 
 //  }

@@ -25,7 +25,7 @@
         },
         992: {
           items: 1,
-          stagePadding: 200,
+          stagePadding: 100,
         }
       }
     });

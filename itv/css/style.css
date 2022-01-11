@@ -7914,16 +7914,36 @@ fieldset:disabled .btn {
   border-width: 5px !important;
 }
 
+.w-20 {
+  width: 20% !important;
+}
+
 .w-25 {
   width: 25% !important;
+}
+
+.w-40 {
+  width: 40% !important;
 }
 
 .w-50 {
   width: 50% !important;
 }
 
+.w-60 {
+  width: 60% !important;
+}
+
 .w-75 {
   width: 75% !important;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+
+.w-90 {
+  width: 90% !important;
 }
 
 .w-100 {
@@ -11971,7 +11991,13 @@ body {
 }
 
 section {
-  margin: 1.5rem 0;
+  margin: 3rem 0;
+}
+
+@media (min-width: 992px) {
+  section {
+    margin: 1.5rem 0;
+  }
 }
 
 .socials-container {
@@ -12053,6 +12079,51 @@ section {
 }
 
 .video-button:hover {
+  background-color: #e6d300;
+  color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.upcoming-event-item {
+  padding: 0;
+  padding-top: 1.5rem;
+}
+
+.upcoming-event-item .upcoming-event-info {
+  margin: 0.5rem 0;
+}
+
+.upcoming-event-item .upcoming-event-title {
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 1.75rem;
+}
+
+.upcoming-event-item p {
+  margin: 5px 0;
+}
+
+.upcoming-event-item .upcoming-event-form__highlighted {
+  font-weight: 600;
+}
+
+.upcoming-event-item .upcoming-event-description {
+  font-weight: 500;
+}
+
+.upcoming-event-item button {
+  border: none;
+  margin: 0.5rem;
+  background-color: #143468;
+  color: white;
+  padding: 10px 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.upcoming-event-item button:hover {
   background-color: #e6d300;
   color: black;
   -webkit-transition: all 0.3s ease-in-out;
@@ -12280,7 +12351,6 @@ section {
 }
 
 .tuc {
-  height: 210px;
   margin: 15px 0;
 }
 
@@ -12293,26 +12363,25 @@ section {
   height: 100%;
 }
 
-.tuc-bg {
+.tuc-item .tuc-bg {
   position: relative;
   height: 100%;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.tuc-button,
-.tuc-category,
-.tuc-description {
+.tuc-item .tuc-button,
+.tuc-item .tuc-category,
+.tuc-item .tuc-description {
   position: absolute;
 }
 
-.tuc-button {
+.tuc-item .tuc-button {
   top: 5%;
   right: 5%;
 }
 
-.tuc-label {
+.tuc-item .tuc-label {
   position: absolute;
   display: inline-block;
   font-family: "Roboto Condensed", sans-serif;
@@ -12323,13 +12392,13 @@ section {
   left: 0%;
 }
 
-.tuc-category {
+.tuc-item .tuc-label .tuc-category {
   position: relative;
   margin: 4px 0;
   font-size: 0.75rem;
 }
 
-.tuc-description {
+.tuc-item .tuc-label .tuc-description {
   position: relative;
   margin: 0;
   font-size: 1rem;
