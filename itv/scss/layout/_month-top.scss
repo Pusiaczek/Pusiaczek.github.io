@@ -1,19 +1,24 @@
 .month-top {
-  // height: 150px;
-
   .month-top-container {
     height: 100%;
     position: relative;
   }
 
   .month-top-overlay {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     // background-color: black;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(204,204,204,0) 40%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.4962359943977591) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(204, 204, 204, 0) 40%,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(255, 255, 255, 0.4962359943977591) 100%
+    );
     opacity: 1;
     z-index: 9999 !important;
     pointer-events: none;
@@ -22,6 +27,7 @@
 
 .month-top-list {
   height: 80px;
+  width: 100%;
   margin-top: 1.5rem;
 
   .owl-stage-outer,
@@ -85,16 +91,13 @@
 }
 
 @include media-breakpoint-up(md) {
-  // .month-top-container {
-  //   .owl-item {
-  //     opacity: 0.5;
+  .month-top {
+    .month-top-list {
+      width: 90%;
+    }
 
-  //     a {
-  //       // display: block;
-  //       text-align: center;
-  //       display: inline;
-  //       // justify-content: center;
-  //     }
-  //   }
-  // }
+    .month-top-overlay {
+      display: initial;
+    }
+  }
 }
