@@ -12,6 +12,32 @@ DO POPRAWY:
 DO POPRAWY 09.01.2022
 
 1. Nadchodzące wydarzenie, caly komponent +
-2. Ikonka Live w górnym pasku (w sumie był moment, że ona tam była i działała o.O)
-3. Pasek z info na nawigacji
 4. 2x karuzela +
+
+
+DO POPRAWY 12.01.2022
+
+  DONE:
+    2. Główny slider się rozjeżdża w większej rozdzielczości. Pasuje żeby wymiar był jak najbardziej zbliżony proporcjami do 16:9 ( załączona grafika )+
+    7. Autoplay wyróżnionych na mobilu
+    9. Autoplay w wydarzeniach
+    4. Wszystkie obrazy w sliderze klikalne (link do artykułu)
+    5. Klilane obrazki w tych trzech wyróżnionych artykułach
+    6. Klikalne tytuły w "top miesiąca"
+    8. Wyśrodkowany top miesiąca na mobilu
+    1. Logo "klikalne"
+    10. Klikalny obrazek i tytul w all-news
+
+
+  50/50:
+    3. Czy do "top miesiąca" możemy dorzucić dwa kolejne widoczne i wycieniowane?
+        (NAŁOŻYĆ GRADIENT NA RODZICA Z PRZYCIEMNIENIEM BOKOW)
+
+
+  IN PROGRESS:
+
+
+  TO DO:
+    2. Ikonka Live w górnym pasku (w sumie był moment, że ona tam była i działała o.O)
+    3. Pasek z info na nawigacji
+

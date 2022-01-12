@@ -1,9 +1,28 @@
 .month-top {
-  height: 150px;
+  // height: 150px;
+
+  .month-top-container {
+    height: 100%;
+    position: relative;
+  }
+
+  .month-top-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: black;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(204,204,204,0) 40%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.4962359943977591) 100%);
+    opacity: 1;
+    z-index: 9999 !important;
+    pointer-events: none;
+  }
 }
 
-.month-top-container {
+.month-top-list {
   height: 80px;
+  margin-top: 1.5rem;
 
   .owl-stage-outer,
   .owl-stage,
@@ -11,15 +30,27 @@
     height: 100%;
   }
 
+  .owl-item {
+    opacity: 0.5;
 
+    a {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .owl-item.active {
+    opacity: 1;
+  }
 }
 
 .month-top-item {
   height: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-items: center;
+  align-self: center;
+  justify-self: center;
+  text-align: left;
 }
 
 .month-top-id {
@@ -29,6 +60,7 @@
   height: 40%;
   aspect-ratio: 1/1;
   margin: 10px;
+  margin-bottom: 20px;
 
   background-color: $light-blue;
   color: white;
@@ -50,4 +82,19 @@
 .month-top-title {
   font-weight: 700;
   margin: 0;
+}
+
+@include media-breakpoint-up(md) {
+  // .month-top-container {
+  //   .owl-item {
+  //     opacity: 0.5;
+
+  //     a {
+  //       // display: block;
+  //       text-align: center;
+  //       display: inline;
+  //       // justify-content: center;
+  //     }
+  //   }
+  // }
 }

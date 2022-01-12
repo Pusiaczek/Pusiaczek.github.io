@@ -1,0 +1,51 @@
+.top-navbar {
+  min-height: 42px;
+
+  .top-navbar-socials {
+    height: 100%;
+  }
+
+  .top-navbar-live {
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .top-navbar-live-message,
+  .top-navbar-live-text {
+    display: inline-block;
+    margin: 0 2px;
+    padding: 0;
+  }
+
+  .top-navbar-live-text {
+    font-weight: 700;
+  }
+  .top-navbar-live-message {
+    font-weight: initial;
+  }
+
+  .top-navbar-live-text__highlighted {
+    color: $red;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .top-navbar {
+    font-size: 0.75rem;
+  }
+}
+
+
+
+.top-navbar-live-icon {
+  background-image: url("../img/header/live-icon.png");
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  margin-right: 5px;
+}

@@ -1,21 +1,23 @@
 $ad-bg-color: rgb(235, 253, 153);
 
+.ad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: $ad-bg-color;
+  text-transform:capitalize;
+
+  border: solid 1px black;
+}
+
 .big-ad {
+  height: 216px;
   margin-bottom: 10px;
   margin-top: 0;
-  background-color: $ad-bg-color;
-  height: 216px;
-  display: block;
 }
 
-.tut-ad {
-  background-color: $ad-bg-color;
-  height: 100%;
+.small-ad {
+  height: 260px;
 
-}
-
-.news-aside-ad {
-  background-color: $ad-bg-color;
-  height: 200px;
-  // height: 100%;
 }

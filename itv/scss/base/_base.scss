@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+$main-font: "Roboto Condensed", sans-serif;
+
 body {
   font-family: $main-font;
   font-size: 16px;
@@ -12,31 +14,40 @@ body {
 section {
   margin: 3rem 0;
 }
-// .dupa {
-// color: blue;
 
-// @include media-breakpoint-up(sm) {
-//   color: $teal;
-// }
-// @include media-breakpoint-up(lg) {
-//   color: $cyan;
-// }
-// }
-
-// @include media-breakpoint-up(sm) {
-
-//  }
-// @include media-breakpoint-up(md) {
-
-//  }
-@include media-breakpoint-up(lg) {
-  section {
-    margin: 1.5rem 0;
-  }
+a {
+  text-decoration: none;
+  color: black;
 }
-// @include media-breakpoint-up(xl) {
 
-//  }
-// @include media-breakpoint-up(xxl) {
+h1 {
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 24px;
+}
 
-//  }
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+// @include media-breakpoint-up(lg) {
+//   section {
+//     margin: 1.5rem 0;
+//   }
+// }

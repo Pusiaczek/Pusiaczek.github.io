@@ -1,18 +1,26 @@
 .carousel-main {
   position: relative;
-  height: 450px;
 }
 .carousel-main-container {
-  height: 90%;
+  height: 100%;
 }
 
 .carousel-main-container {
-  .owl-stage-outer,
+  .owl-stage-outer {
+    height: 90%;
+  }
+
+  .owl-dots {
+    height: 10%;
+  }
+
   .owl-stage,
   .owl-item {
     height: 100%;
   }
+
   .owl-item {
+    width: 80%;
     opacity: 0.5;
     transition: opacity 0.3s ease-in-out;
   }
@@ -26,20 +34,21 @@
   .carousel-main-item {
     height: 100%;
 
-    .carousel-main-button,
+    .carousel-main-tag,
     .carousel-main-category,
     .carousel-main-description {
       position: absolute;
     }
 
     .carousel-main-bg {
+      aspect-ratio: 16/9;
       position: relative;
       height: 100%;
       width: 100%;
       object-fit: cover;
     }
 
-    .carousel-main-button {
+    .carousel-main-tag {
       top: 5%;
       right: 5%;
     }
@@ -48,6 +57,7 @@
       position: absolute;
       display: inline-block;
       font-family: $main-font;
+      text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 
       color: white;
 

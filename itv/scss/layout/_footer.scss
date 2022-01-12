@@ -1,3 +1,21 @@
+footer {
+  .footer-bg {
+    height: 325px;
+    position: relative;
+  }
+
+  .footer-itv-logo-wrapper {
+    cursor: pointer;
+    height: 50%;
+    z-index: 100;
+
+    .footer-itv-logo {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
 .footer-ribbon {
   display: flex;
   height: 55px;
@@ -27,32 +45,7 @@ footer p {
   color: $red;
 }
 
-.footer-bg {
-  position: relative;
-}
-
-
-.footer-logo-container {
-  height: 325px;
-  display: flex;
-  align-items: center;
-}
-
-.footer-itv-logo {
-  width: 75%;
-  margin: 0 auto;
-  cursor: pointer;
-}
-
-
-
-
-@include media-breakpoint-up(md) {
-  .footer-itv-logo {
-    width: 400px;
-  }
-}
-
+// Background image
 @include media-breakpoint-up(lg) {
   .footer-bg::before {
     content: " ";
@@ -63,14 +56,9 @@ footer p {
     width: 100%;
     height: 100%;
     opacity: 0.3;
-    background-image: url("../img/footer/footer-bg.png");
+    background-image: url("../gfx/footer/footer-bg.png");
     background-repeat: no-repeat;
-    background-position: 110% 0;
+    background-position: 140% 0;
     background-size: contain;
-  }
-
-  .footer-itv-logo {
-    width: 400px;
-    margin-left: 5%;
   }
 }

@@ -2,24 +2,16 @@
 
 @import "utils/fonts";
 @import "utils/variables";
-
 @import "base/base";
 
 @import "components/index";
 
-
-@import "layout/topnav";
-@import "layout/header-main";
-@import "layout/main-navbar";
+@import "layout/header/top-navbar";
+@import "layout/header/main-header";
+@import "layout/header/main-navbar";
 @import "layout/carousel-main";
-@import 'layout/tuc';
+@import 'layout/featured-news';
 @import 'layout/month-top';
 @import 'layout/tut';
 @import 'layout/news';
 @import 'layout/footer';
-// @import 'layout/gallery';
-// @import 'layout/_appointment';
-// @import 'layout/contact-form';
-
-
-// @import "layout/header-mainnav";
