@@ -6,7 +6,7 @@ footer {
 
   .footer-itv-logo-wrapper {
     cursor: pointer;
-    height: 50%;
+    width: 80%;
     z-index: 100;
 
     .footer-itv-logo {
@@ -18,11 +18,11 @@ footer {
 
 .footer-ribbon {
   display: flex;
-  height: 55px;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
   font-weight: 300;
+  min-height: 55px;
 }
 
 footer p {
@@ -37,6 +37,10 @@ footer p {
   font-weight: 700;
 }
 
+.footer-ribbon-madewithlove-wrapper {
+  height: 22.5px;
+}
+
 .footer-ribbon-madewithlove {
   font-weight: 700;
 }
@@ -45,8 +49,23 @@ footer p {
   color: $red;
 }
 
+@include media-breakpoint-up(md) {
+  footer {
+    .footer-itv-logo-wrapper {
+      width: 60%;
+    }
+  }
+}
+
 // Background image
 @include media-breakpoint-up(lg) {
+  footer {
+    .footer-itv-logo-wrapper {
+      height: 55%;
+      width: auto;
+    }
+  }
+
   .footer-bg::before {
     content: " ";
     display: block;

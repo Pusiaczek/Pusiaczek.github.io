@@ -47,11 +47,19 @@
         },
         1200: {
           items: 1,
-          stagePadding: 250,
+          stagePadding: 300,
         },
         1400: {
           items: 1,
-          stagePadding: 300,
+          stagePadding: 350,
+        },
+        1600: {
+          items: 1,
+          stagePadding: 450,
+        },
+        1800: {
+          items: 1,
+          stagePadding: 550,
         }
       }
     });
@@ -68,7 +76,7 @@
 
   var featuredNews = function () {
     $(".featured-news-container").owlCarousel({
-      loop: true,
+      loop: false,
       center: true,
       responsiveClass: true,
       responsiveRefreshRate: 200,
@@ -76,19 +84,20 @@
       nav: false,
       dots: false,
       dotsEach: false,
-      autoplay: true,
       smartSpeed: 1000,
-      autoplayTimeout: 3500,
+      autoplayTimeout: 1000,
       autoplayHoverPause: true,
       responsive: {
         0: {
           items: 1,
-          margin: 50
+          margin: 50,
+          autoplay: false,
 
         },
         992: {
           items: 3,
-          margin: 20
+          margin: 20,
+          autoplay: true,
         }
       }
     });

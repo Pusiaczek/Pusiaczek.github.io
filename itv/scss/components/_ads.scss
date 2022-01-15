@@ -1,23 +1,49 @@
 $ad-bg-color: rgb(235, 253, 153);
 
+.ad-wrapper {
+  margin: 0;
+  margin-bottom: 1rem;
+
+  .ad-title {
+    display: inline-block;
+    color: #dddddd;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 11px;
+    padding: 0;
+    margin: 0 8px;
+  }
+
+  .ad-hr {
+    display: inline-block;
+    border-bottom: 1px solid #aaaaaa;
+    margin: 0;
+    margin-bottom: 4px;
+    width: 30%;
+  }
+}
+
 .ad {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   background-color: $ad-bg-color;
-  text-transform:capitalize;
+  text-transform: capitalize;
 
   border: solid 1px black;
 }
 
 .big-ad {
-  height: 216px;
-  margin-bottom: 10px;
-  margin-top: 0;
+  height: 200px;
 }
 
 .small-ad {
   height: 260px;
+}
 
+.ad-1 {
+  margin-top: -0.5rem;
 }

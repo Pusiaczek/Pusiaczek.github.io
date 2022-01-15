@@ -38,14 +38,19 @@
 
 
 .top-navbar-live-icon {
-  background-image: url("../img/header/live-icon.png");
+  background-image: url("../gfx/header/live-icon.png");
   display: inline-block;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%;
+  background-size: cover;
+  opacity: 0.5;
+  height: 25px;
   width: 40px;
   padding: 0;
   margin: 0;
   margin-right: 5px;
+}
+
+.top-navbar-live-icon.active {
+  opacity: 1;
 }

@@ -30,14 +30,24 @@ DO POPRAWY 12.01.2022
     3. Czy do "top miesiąca" możemy dorzucić dwa kolejne widoczne i wycieniowane?
         (NAŁOŻYĆ GRADIENT NA RODZICA Z PRZYCIEMNIENIEM BOKOW)
 
+  DONE 15.01:
+    10. Main-nav czcionka grubosc
+    7. Usunąć gradient z headera
+    6. footer logo proporcje
+    4. Wysokosc main caruzeli
+    9. Widok glownej karuzeli maksymalnie zblizony do projektu
+    12. Tekst footera na najmniejszych sie rozjezda
+    8. znacznik ----------------- reklama ------------- przed kazda reklama
+    3. Pasek z info na nawigacji - moze rozpychac navbara
+    2. Ikonka Live w górnym pasku (w sumie był moment, że ona tam była i działała o.O)
+    1. All news - zmienic uklad na mobilkach
+
 
   50/50:
 
 
   IN PROGRESS:
-
+    5. featured-news - autoplay na 1 itemie, brak autoplaya na 3 itemach
 
   TO DO:
-    2. Ikonka Live w górnym pasku (w sumie był moment, że ona tam była i działała o.O)
-    3. Pasek z info na nawigacji
-
+    11. PODSTRONA!
