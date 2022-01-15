@@ -9405,6 +9405,8 @@ p {
     font-size: 0.9rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
   }
   .main-navbar-alertbar {
     background-color: orange;
@@ -9427,6 +9429,8 @@ p {
   .main-navbar-dropdown,
   .main-navbar .nav-link {
     font-size: 1rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
 }
 

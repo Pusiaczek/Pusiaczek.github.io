@@ -76,8 +76,8 @@
 
   var featuredNews = function () {
     $(".featured-news-container").owlCarousel({
-      loop: false,
-      center: true,
+      loop: true,
+      center: false,
       responsiveClass: true,
       responsiveRefreshRate: 200,
       stagePadding: 15,
@@ -85,19 +85,21 @@
       dots: false,
       dotsEach: false,
       smartSpeed: 1000,
-      autoplayTimeout: 1000,
+      autoplayTimeout: 3500,
       autoplayHoverPause: true,
       responsive: {
         0: {
           items: 1,
           margin: 50,
-          autoplay: false,
+          autoplay: true,
+          loop: true,
 
         },
         992: {
           items: 3,
           margin: 20,
-          autoplay: true,
+          autoplay: false,
+          loop: false,
         }
       }
     });

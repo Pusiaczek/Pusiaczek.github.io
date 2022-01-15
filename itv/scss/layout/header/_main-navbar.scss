@@ -17,7 +17,6 @@
   font-weight: 600;
   margin-bottom: 1rem;
 
-
   .main-navbar-alertbar-tag {
     display: inline-block;
     color: white;
@@ -36,8 +35,6 @@
     white-space: nowrap;
     overflow: visible;
     // text-overflow: ellipsis;
-
-
   }
 }
 
@@ -47,8 +44,10 @@
     font-size: 0.9rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
   }
+
 
 
   .main-navbar-alertbar {
@@ -74,5 +73,7 @@
   .main-navbar-dropdown,
   .main-navbar .nav-link {
     font-size: 1rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
 }
