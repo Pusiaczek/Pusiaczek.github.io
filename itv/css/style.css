@@ -9214,6 +9214,7 @@ p {
   padding: 5px 20px;
   font-size: 0.75rem;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .upcoming-event-item {
@@ -9607,7 +9608,6 @@ p {
   margin-top: 1.5rem;
 }
 
-.month-top-list .owl-stage-outer,
 .month-top-list .owl-stage,
 .month-top-list .owl-item {
   height: 100%;
@@ -9813,5 +9813,89 @@ footer p {
     background-position: 140% 0;
     background-size: contain;
   }
+}
+
+.news-single h1, .news-single .h1 {
+  font-size: 2.75rem;
+  line-height: normal;
+  margin-bottom: 0.75rem;
+}
+
+.news-single .news-author .news-author-portrait {
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+.news-single .news-author .news-author-portrait .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(9, 9, 121, 0) 55%, white 70%);
+}
+
+.news-single .news-author .news-author-portrait img {
+  width: 100%;
+  height: 100%;
+}
+
+.news-single .news-author .news-author__highlighted {
+  font-weight: 600;
+}
+
+.news-single .news-image {
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.news-single .news-image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(90%, rgba(255, 255, 255, 0.9)), to(white));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.9) 90%, white 100%);
+}
+
+.news-single .news-image img {
+  width: 100%;
+}
+
+.news-single .news-article {
+  width: 95%;
+}
+
+.news-single .news-article .news-text {
+  margin-top: 1.5rem;
+}
+
+.news-single .news-article .highlighted {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.news-single .yt-video {
+  width: 80%;
+  min-height: 315px;
+  margin: 1rem 0;
+}
+
+.news-single .news-footer .news-tags {
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #949494;
+}
+
+.news-single .news-footer .news-tags .highlighted {
+  color: black;
+}
+
+.news-single .news-footer .news-author {
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

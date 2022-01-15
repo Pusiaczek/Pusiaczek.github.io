@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iTV</title>
+  <script src="https://kit.fontawesome.com/ad74a8bc0d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/owl.carousel.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js" defer></script>
+  <script src="./js/carousels.js" defer></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="top-navbar navbar navbar-expand-lg bg-primary text-white navbar-dark p-lg-0">
+      <div class="container-lg">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topnav-toggler"
+          aria-controls="topnav-toggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="top-navbar-socials d-inline-block d-lg-none align-items-center">
+          <div class="socials-container">
+            <a href="#"><i class="fab fa-facebook-square social-icon"></i></a>
+            <a href="#"><i class="fab fa-twitter-square social-icon"></i></a>
+          </div>
+        </div>
+
+        <div class="top-navbar-list collapse navbar-collapse" id="topnav-toggler">
+          <ul class="navbar-nav text-uppercase me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">O nas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reklama</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Patronat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Polityka prywatności</a>
+            </li>
+            <li class="nav-item mr-auto">
+              <a class="nav-link" href="#">Kontakt</a>
+            </li>
+          </ul>
+
+          <div class="top-navbar-live d-none d-lg-flex justify-content-end align-items-center">
+            <i class="top-navbar-live-icon active"></i>
+            <p class="top-navbar-live-text">Aktualnie
+              <span class="top-navbar-live-text__highlighted">na żywo:</span>
+              <span class="top-navbar-live-message">Transmisja Mszy Świętej w Trzemeśni</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-header bg-secondary">
+      <div class="container main-header-container d-flex h-100 justify-content-center align-items-center">
+        <a href="#" class="main-header-itv-logo-wrapper">
+          <img src="./gfx/header/itv-logo-white.png" class="main-header-itv-logo" alt="itv-logo">
+        </a>
+
+        <div class="main-header-socials">
+          <div class="socials-container">
+            <a href="#"><i class="fab fa-facebook-square social-icon"></i></a>
+            <a href="#"><i class="fab fa-twitter-square social-icon"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="main-navbar navbar navbar-expand-lg navbar-light text-uppercase p-lg-0">
+      <div class="container-lg text-center justify-content-around justify-content-lg-center font-weight-bold">
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle p-1 main-navbar-dropdown" data-bs-toggle="dropdown" href="#"
+            id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+            Wybierz rejon
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Rejon #1</a></li>
+            <li><a class="dropdown-item" href="#">Rejon #2</a></li>
+            <li><a class="dropdown-item" href="#">Rejon #3</a></li>
+          </ul>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav-left-toggler"
+          aria-controls="mainnav-left-toggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-grow-0" id="mainnav-left-toggler">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kultura</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rozrywka</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sport</a>
+            </li>
+            <li class="nav-item mr-auto">
+              <a class="nav-link" href="#">Historia</a>
+            </li>
+            <li class="nav-item mr-auto">
+              <a class="nav-link" href="#">Zdrowie</a>
+            </li>
+            <li class="nav-item mr-auto">
+              <a class="nav-link" href="#">Inwestycje</a>
+            </li>
+            <li class="nav-item mr-auto">
+              <a class="nav-link" href="#">Polityka</a>
+            </li>
+            <li class="nav-item mr-auto">
+              <a class="nav-link" href="#">Religia</a>
+            </li>
+            <li class="nav-item mr-auto">
+              <a class="nav-link" href="#">Programy cykliczne</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-navbar-alertbar d-none">
+      <div class="container">
+        <span class="main-navbar-alertbar-tag">WAŻNE!</span>
+        <p class="main-navbar-alertbar-text">Starosta myślenicki: w naszym szpitalu nie ma przypadku koronawirusa</p>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="ad-wrapper ad-1">
+    <div class="container text-center">
+      <hr class="ad-hr">
+      <p class="ad-title">reklama</p>
+      <hr class="ad-hr">
+      <div class="ad big-ad">
+        <h1>Reklama 1</h1>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ALL NEWS -->
+  <section class="news mt-4">
+    <div class="container">
+      <div class="row my-0">
+        <div class="news-all col-lg-8 my-0">
+
+          <div class="news-all-list">
+
+            <!-- SINGLE NEWS -->
+            <div class="news-single container d-flex flex-column justify-content-center align-items-center">
+              <h1>Wypadek w Lipniku. Samochód uderzył w stacje transformatorową</h1>
+
+              <div class="news-author-wrapper d-flex flex-row justify-content-between align-items-center w-100">
+
+                <div class="news-author d-flex flex-row justify-content-start align-items-center ms-1">
+                  <div class="news-author-portrait d-inline-block mx-2 bg-primary">
+                    <div class="overlay"></div>
+                    <img src="./gfx/single-news/portrait-template.png" alt="news-author-portrait">
+                  </div>
+                  <div class=".news-author-info d-inline-block mx-2">
+                    <p class="news-author-date">Data publikacji: <span class="news-author__highlighted">18 marca
+                        2022</span>
+                    </p>
+                    <p class="news-author-name">Autor: <span class="news-author__highlighted">Małgorzata Miszczak</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tag me-1 h-100">
+                  <p>Kategoria</p>
+                </div>
+              </div>
+
+              <div class="news-image text-center">
+                <div class="overlay"></div>
+                <img src="./gfx/single-news/single-news-image-template.png" alt="news-image">
+              </div>
+
+              <div class="news-article">
+                <p class="news-text highlighted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quia
+                  perferendis saepe fugit excepturi, praesentium a amet possimus libero, quam illum tenetur beatae aut
+                  dolore? Asperiores similique cupiditate aperiam illo iste repellendus, architecto ad doloribus velit
+                  eum ducimus harum ipsum laudantium ipsa eveniet vel molestiae aspernatur quibusdam, corporis atque
+                  pariatur?</p>
+                <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A dignissimos ex corporis,
+                  laborum expedita sunt porro eius illo, harum iusto blanditiis earum! Cum esse ea accusantium nihil
+                  repellat voluptatibus suscipit!</p>
+              </div>
+
+              <iframe class="yt-video" src="https://www.youtube.com/embed/s0zlz8_Si2M" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+
+              <div class="news-footer">
+                <p class="news-tags"><span class="highlighted">TAGI:</span>PIERWSZY, DRUGI, TRZECI, CZWARTY</p>
+
+                <div class="news-author d-flex flex-row justify-content-start align-items-center ms-1">
+                  <div class="news-author-portrait d-inline-block mx-2 bg-primary">
+                    <div class="overlay"></div>
+                    <img src="./gfx/single-news/portrait-template.png" alt="news-author-portrait">
+                  </div>
+                  <div class=".news-author-info d-inline-block mx-2">
+                    <p class="news-author-name mb-3"><span class="news-author__highlighted">Małgorzata Miszczak</span>
+                    </p>
+                  </div>
+                </div>
+
+                <p class="about-author mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, distinctio ullam. Quasi perferendis
+                  aut molestias laudantium. Officiis vero facilis suscipit consectetur illum vitae totam ad.
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="news-aside col-lg-4 my-0">
+          <div class="news-aside-container">
+
+            <div class="ad-wrapper">
+              <div class="text-center">
+                <hr class="ad-hr">
+                <p class="ad-title">reklama</p>
+                <hr class="ad-hr">
+                <div class="tut-ad ad small-ad">
+                  <h1>Reklama 2</h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="news-aside-upcoming">
+              <div class="news-aside-upcoming-header section-header">
+                <p><span class="section-header__highlighted">Nadchodzące</span>wydarzenia</p>
+              </div>
+
+              <div class="upcoming-event-list owl-carousel owl-theme">
+
+                <!-- NEW UPCOMING-EVENT ITEM -->
+                <div class="upcoming-event-item w-90 d-flex flex-column mx-auto align-items-center">
+                  <img src="./gfx/upcoming-events/event-template.png" alt="upcoming-event-picture"
+                    class="upcoming-event-image w-100">
+
+                  <div class="upcoming-event-info w-90">
+                    <p class="upcoming-event-title w-90 my-3">Ekstra wydarzenie</p>
+                    <p class="upcoming-event-date">Data: <span
+                        class="upcoming-event-form__highlighted">25.08.2022</span></p>
+                    <p class="upcoming-event-time">Godzina: <span class="upcoming-event-form__highlighted">13:37</span>
+                    </p>
+                    <p class="upcoming-event-location">Miejsce: <span
+                        class="upcoming-event-form__highlighted">Myślenice, ul. Zdrojowa 9A</span></p>
+                    <p class="upcoming-event-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Distinctio, sit.</p>
+                  </div>
+                  <button class="upcoming-event-details-btn">Szczegóły wydarzenia</button>
+                  <button class="upcoming-event-all-events">Wszystkie wydarzenia</button>
+                </div>
+
+                <!-- NEW UPCOMING-EVENT ITEM -->
+                <div class="upcoming-event-item w-90 d-flex flex-column mx-auto align-items-center">
+                  <img src="./gfx/upcoming-events/event-template.png" alt="upcoming-event-picture"
+                    class="upcoming-event-image w-100">
+
+                  <div class="upcoming-event-info w-90">
+                    <p class="upcoming-event-title w-90 my-3">Supa dupa fly</p>
+                    <p class="upcoming-event-date">Data: <span
+                        class="upcoming-event-form__highlighted">25.08.2022</span></p>
+                    <p class="upcoming-event-time">Godzina: <span class="upcoming-event-form__highlighted">13:37</span>
+                    </p>
+                    <p class="upcoming-event-location">Miejsce: <span
+                        class="upcoming-event-form__highlighted">Myślenice, ul. Zdrojowa 9A</span></p>
+                    <p class="upcoming-event-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Distinctio, sit.</p>
+                  </div>
+                  <button class="upcoming-event-details-btn">Szczegóły wydarzenia</button>
+                  <button class="upcoming-event-all-events">Wszystkie wydarzenia</button>
+                </div>
+
+                <!-- NEW UPCOMING-EVENT ITEM -->
+                <div class="upcoming-event-item w-90 d-flex flex-column mx-auto align-items-center">
+                  <img src="./gfx/upcoming-events/event-template.png" alt="upcoming-event-picture"
+                    class="upcoming-event-image w-100">
+
+                  <div class="upcoming-event-info w-90">
+                    <p class="upcoming-event-title w-90 my-3">Nazwa prezentowanego wydarzenia</p>
+                    <p class="upcoming-event-date">Data: <span
+                        class="upcoming-event-form__highlighted">25.08.2022</span></p>
+                    <p class="upcoming-event-time">Godzina: <span class="upcoming-event-form__highlighted">13:37</span>
+                    </p>
+                    <p class="upcoming-event-location">Miejsce: <span
+                        class="upcoming-event-form__highlighted">Myślenice, ul. Zdrojowa 9A</span></p>
+                    <p class="upcoming-event-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Distinctio, sit.</p>
+                  </div>
+                  <button class="upcoming-event-details-btn">Szczegóły wydarzenia</button>
+                  <button class="upcoming-event-all-events">Wszystkie wydarzenia</button>
+                </div>
+
+
+
+              </div>
+
+            </div>
+
+            <div class="ad-wrapper">
+              <div class="text-center">
+                <hr class="ad-hr">
+                <p class="ad-title">reklama</p>
+                <hr class="ad-hr">
+                <div class="tut-ad ad small-ad">
+                  <h1>Reklama 3</h1>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <div class="ad-wrapper">
+    <div class="container text-center">
+      <hr class="ad-hr">
+      <p class="ad-title">reklama</p>
+      <hr class="ad-hr">
+      <div class="ad big-ad container">
+        <h1>Reklama 4</h1>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="featured-news">
+    <div class="container">
+      <div class="featured-news section-header mx-auto">
+        <h1>ZOBACZ<span class="section-header__highlighted">również</span></h1>
+      </div>
+    </div>
+
+    <div class="container featured-news-container owl-carousel">
+
+      <a class="featured-news-item" href="#">
+        <img src="./gfx/featured/featured-template.jpg" alt="temp-1" class="featured-news-bg">
+        <div class="featured-news-button tag">
+          <p>WIDEO</p>
+        </div>
+        <div class="featured-news-label">
+          <p class="featured-news-category">KATEGORIA / 39 minut</p>
+          <h2 class="featured-news-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</h2>
+        </div>
+      </a>
+
+      <a class="featured-news-item" href="#">
+        <img src="./gfx/featured/featured-template.jpg" alt="temp-1" class="featured-news-bg">
+        <div class="featured-news-button tag">
+          <p>WIDEO</p>
+        </div>
+        <div class="featured-news-label">
+          <p class="featured-news-category">KATEGORIA / 39 minut</p>
+          <h2 class="featured-news-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</h2>
+        </div>
+      </a>
+
+      <a class="featured-news-item" href="#">
+        <img src="./gfx/featured/featured-template.jpg" alt="temp-1" class="featured-news-bg">
+        <div class="featured-news-button tag">
+          <p>WIDEO</p>
+        </div>
+        <div class="featured-news-label">
+          <p class="featured-news-category">KATEGORIA / 39 minut</p>
+          <h2 class="featured-news-description">Ale mamy fajny, ciekawy tytuł tutaj na głownej stronie! HOHO!</h2>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+
+  <section class="month-top">
+    <div class="container">
+      <div class="month-top-header section-header mx-auto">
+        <h1>TOP<span class="section-header__highlighted">miesiąca</span></h1>
+      </div>
+    </div>
+
+    <div class="month-top-container">
+      <div class="month-top-overlay">
+      </div>
+
+      <div class="month-top-list mx-auto owl-carousel owl-theme">
+
+        <a href="#">
+
+          <div class="month-top-item d-flex align-items-center flex-row flex-nowrap" href="#">
+            <div class="month-top-id">1</div>
+            <div class="month-top-info">
+              <p class="month-top-category">KATEGORIA / 39 minut</p>
+              <h2 class="month-top-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+            </div>
+          </div>
+
+        </a>
+
+        <a href="#">
+
+          <div class="month-top-item d-flex align-items-center flex-row flex-nowrap" href="#">
+            <div class="month-top-id">2</div>
+            <div class="month-top-info">
+              <p class="month-top-category">KATEGORIA / 39 minut</p>
+              <h2 class="month-top-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+            </div>
+          </div>
+
+        </a>
+
+        <a href="#">
+
+          <div class="month-top-item d-flex align-items-center flex-row flex-nowrap" href="#">
+            <div class="month-top-id">3</div>
+            <div class="month-top-info">
+              <p class="month-top-category">KATEGORIA / 39 minut</p>
+              <h2 class="month-top-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+            </div>
+          </div>
+
+        </a>
+
+        <a href="#">
+
+          <div class="month-top-item d-flex align-items-center flex-row flex-nowrap" href="#">
+            <div class="month-top-id">4</div>
+            <div class="month-top-info">
+              <p class="month-top-category">KATEGORIA / 39 minut</p>
+              <h2 class="month-top-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+            </div>
+          </div>
+
+        </a>
+
+        <a href="#">
+
+          <div class="month-top-item d-flex align-items-center flex-row flex-nowrap" href="#">
+            <div class="month-top-id">5</div>
+            <div class="month-top-info">
+              <p class="month-top-category">KATEGORIA / 39 minut</p>
+              <h2 class="month-top-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+            </div>
+          </div>
+
+        </a>
+
+        <a href="#">
+
+          <div class="month-top-item d-flex align-items-center flex-row flex-nowrap" href="#">
+            <div class="month-top-id">6</div>
+            <div class="month-top-info">
+              <p class="month-top-category">KATEGORIA / 39 minut</p>
+              <h2 class="month-top-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+            </div>
+          </div>
+
+        </a>
+
+        <a href="#">
+
+          <div class="month-top-item d-flex align-items-center flex-row flex-nowrap" href="#">
+            <div class="month-top-id">7</div>
+            <div class="month-top-info">
+              <p class="month-top-category">KATEGORIA / 39 minut</p>
+              <h2 class="month-top-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+            </div>
+          </div>
+
+        </a>
+
+
+        <a href="#">
+
+          <div class="month-top-item d-flex align-items-center flex-row flex-nowrap" href="#">
+            <div class="month-top-id">8</div>
+            <div class="month-top-info">
+              <p class="month-top-category">KATEGORIA / 39 minut</p>
+              <h2 class="month-top-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+            </div>
+          </div>
+
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container-fluid footer-bg bg-secondary">
+      <div
+        class="container h-100 d-flex text-center h-100 justify-content-center justify-content-lg-start align-items-center">
+
+        <div class="footer-itv-logo-wrapper ms-lg-5">
+          <a href="#" class="">
+            <img src="./gfx/header/itv-logo-white.png" class="footer-itv-logo" alt="itv-logo">
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid bg-primary">
+
+      <div class="container p-0">
+        <div class="footer-ribbon row text-center">
+
+          <div class="footer-ribbon-madewithlove-wrapper col-md-2 text-md-end order-md-2">
+            <p class="footer-ribbon-madewithlove">
+              Made with <span>love!</span>
+            </p>
+          </div>
+          <div class="col-md-10 text-md-start order-md-1">
+            <p class="footer-ribbon-info">
+              <span>Myślenice iTV</span> - Telewizja Internetowa Region Południe - Wszystkie prawa zastrzeżone - 2022
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
+</body>
+
+</html>
