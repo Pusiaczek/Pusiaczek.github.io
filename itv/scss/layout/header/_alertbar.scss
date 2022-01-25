@@ -1,0 +1,57 @@
+.alertbar {
+  position: relative;
+  background-color: orange;
+  padding: 0;
+  height: 2rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 600;
+
+  .container {
+    .alertbar-tag {
+      display: inline-block;
+      color: white;
+      text-transform: uppercase;
+      background-color: $red;
+      height: 100%;
+      width: 100px;
+    }
+
+    .alertbar-wrapper {
+      display: block;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      // background-color: green;
+
+      .alertbar-content {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 60s linear infinite;
+
+        .alertbar-text {
+          position: relative;
+          height: 100%;
+          line-height: 2rem;
+          padding-right: 2rem;
+          padding-left: 1rem;
+        }
+
+        .alertbar-text::after {
+          content: "■";
+          position: absolute;
+          display: block;
+          color: $red;
+          bottom: 0px;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+@keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}

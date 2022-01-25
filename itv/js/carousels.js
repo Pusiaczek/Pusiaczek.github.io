@@ -187,6 +187,5 @@
   })(jQuery);
 })();
 
-
 //
 window.dispatchEvent(new Event('resize'))
