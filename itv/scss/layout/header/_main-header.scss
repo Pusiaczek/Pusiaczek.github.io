@@ -1,15 +1,16 @@
 .main-header {
   height: 220px;
   position: relative;
+  background-color: #05092f;
 
   .main-header-itv-logo-wrapper {
     cursor: pointer;
-    height: 60%;
+    height: 100%;
     z-index: 100;
 
     .main-header-itv-logo {
       height: 100%;
-      width: 100%;
+      // width: 100%;
     }
   }
 }

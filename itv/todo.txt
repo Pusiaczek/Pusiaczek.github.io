@@ -44,20 +44,23 @@ DO POPRAWY 12.01.2022
     5. featured-news - autoplay na 1 itemie, brak autoplaya na 3 itemach
     11. PODSTRONA!
 
+   
+  
   DONE 24.01.2022
+    2. Usuniecie TOP-nav w headerze 
+    8. Alertbar - restrukturyzacja
+    4. Karuzela glowna jako 7/12 strony + podglad reszty <==> reszta to przeniesione tutaj NAJNOWSZE WIADOMOSCI
+    5. Wyroznione do max 4 itemow + response
+    1. Zmiana loga w headerze
+    7. Stopka = menu 
+    6. All news - kafelki + hover z trescia
 
 
   50/50:
-
+    8. Poprawic kwadraty
+    6. Pewnie sporo poprawek marginesow itp itd
 
   IN PROGRESS:
+    3. Zmiana układu navbara -> dodać gminy -> ma sie rozjezdzac w dol po calej szerokosci
 
   TO DO:
-
-    1. Zmiana loga w headerze
-    2. Usuniecie TOP-nav w headerze 
-    3. Zmiana układu navbara -> dodać gminy -> ma sie rozjezdzac w dol po calej szerokosci
-    4. Karuzela glowna jako 7/12 strony + podglad reszty <==> reszta to przeniesione tutaj NAJNOWSZE WIADOMOSCI
-    5. Wyroznione do max 4 itemow + response
-    6. All news - kafelki + hover z trescia
-    7. Stopka = menu

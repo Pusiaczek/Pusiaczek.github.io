@@ -1,5 +1,7 @@
 .carousel-main {
   position: relative;
+  height: max-content;
+  
 }
 .carousel-main-container {
   height: 100%;
@@ -7,11 +9,7 @@
 
 .carousel-main-container {
   .owl-stage-outer {
-    height: 90%;
-  }
-
-  .owl-dots {
-    height: 10%;
+    height: 100%;
   }
 
   .owl-stage,
@@ -20,7 +18,7 @@
   }
 
   .owl-item {
-    width: 80%;
+    width: 100%;
     opacity: 0.5;
     transition: opacity 0.3s ease-in-out;
   }
@@ -44,7 +42,7 @@
       aspect-ratio: 16/9;
       position: relative;
       height: 100%;
-      width: 100%;
+      // width: 100%;
       object-fit: cover;
     }
 

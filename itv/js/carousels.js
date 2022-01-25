@@ -19,49 +19,17 @@
       autoplay: true,
       autoplayTimeout: 4500,
       autoplayHoverPause: true,
-      responsiveClass: true,
+      responsiveClass: false,
       responsiveRefreshRate: 200,
       smartSpeed: 1000,
       dotsEach: true,
       loop: true,
       nav: false,
-      dots: true,
+      dots: false,
       center: true,
-      margin: 25,
-      responsive: {
-        0: {
-          items: 1,
-          stagePadding: 0,
-        },
-        576: {
-          items: 1,
-          stagePadding: 0,
-        },
-        768: {
-          items: 1,
-          stagePadding: 150,
-        },
-        992: {
-          items: 1,
-          stagePadding: 250,
-        },
-        1200: {
-          items: 1,
-          stagePadding: 300,
-        },
-        1400: {
-          items: 1,
-          stagePadding: 350,
-        },
-        1600: {
-          items: 1,
-          stagePadding: 450,
-        },
-        1800: {
-          items: 1,
-          stagePadding: 550,
-        }
-      }
+      margin: 0,
+      stagePadding: 0,
+      items: 1
     });
   };
 
@@ -93,11 +61,22 @@
           margin: 50,
           autoplay: true,
           loop: true,
-
+        },
+        768: {
+          items: 2,
+          margin: 30,
+          autoplay: true,
+          loop: true,
         },
         992: {
           items: 3,
           margin: 20,
+          autoplay: true,
+          loop: true,
+        },
+        1200: {
+          items: 4,
+          margin: 30,
           autoplay: false,
           loop: false,
         }

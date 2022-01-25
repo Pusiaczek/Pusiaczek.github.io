@@ -1,6 +1,5 @@
 footer {
   .footer-bg {
-    height: 325px;
     position: relative;
   }
 
@@ -9,9 +8,35 @@ footer {
     width: 80%;
     z-index: 100;
 
-    .footer-itv-logo {
-      height: 100%;
+    a {
+      display: block;
       width: 100%;
+      height: 100%;
+    }
+
+    .footer-itv-logo {
+      height: 80%;
+      // width: 100%;
+    }
+  }
+
+  .footer-menu {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin: 1.5rem 0;
+    // overflow: hidden;
+    white-space: nowrap;
+    z-index: 200;
+
+    p {
+      margin: 8px 0;
+    }
+
+    p:hover {
+      color: $yellow;
+      transition: color 0.3s ease-in-out;
+      cursor: pointer;
     }
   }
 }
@@ -25,7 +50,7 @@ footer {
   min-height: 55px;
 }
 
-footer p {
+.footer-ribbon p {
   display: inline-block;
   margin: 0;
 
