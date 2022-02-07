@@ -30,6 +30,7 @@ DO POPRAWY 12.01.2022
     3. Czy do "top miesiąca" możemy dorzucić dwa kolejne widoczne i wycieniowane?
         (NAŁOŻYĆ GRADIENT NA RODZICA Z PRZYCIEMNIENIEM BOKOW)
 
+
   DONE 15.01:
     10. Main-nav czcionka grubosc
     7. Usunąć gradient z headera
@@ -43,7 +44,6 @@ DO POPRAWY 12.01.2022
     1. All news - zmienic uklad na mobilkach
     5. featured-news - autoplay na 1 itemie, brak autoplaya na 3 itemach
     11. PODSTRONA!
-
    
   
   DONE 24.01.2022
@@ -56,11 +56,49 @@ DO POPRAWY 12.01.2022
     6. All news - kafelki + hover z trescia
 
 
-  50/50:
+  DONE: 07.02.2022
+    1. alertbar:
+    - font-weight: 400
+    - font-size: 0.9rem
+    - separator 5 px w dół
+    - wysokość żółtego paska +5px w dół i +5px w górę
+    - delikatnie mniejsza prędkość przewijania
+    - pausa po najechaniu 
+
     8. Poprawic kwadraty
+
+    5. wszystkie aktualności
+    - czarny gradient od dołu - tak żeby tytuł był czytelniejszy
+    - obrazek przy hoverze jeszce ciemniejszy i może być rozmyty delikatnie
+
+
+  50/50:
     6. Pewnie sporo poprawek marginesow itp itd
 
   IN PROGRESS:
-    3. Zmiana układu navbara -> dodać gminy -> ma sie rozjezdzac w dol po calej szerokosci
+    6. stopka
+    - logo mniejsze
+    - podział na 3 kolumny: logo | menu | zdjęcie
 
   TO DO:
+
+    3. najnowsze wiadomości
+    - większy odstęp od zdjęcia w pierwszym newsie
+    - czcionka wystarczy 1rem
+    - kategoria: font-weight: 400
+    - opacity separatora nawet 0.1, ew. 0.2
+
+    5. wszystkie aktualności
+    - ten dodatkowy opis jakby się udało w jednym akapicie, bez <berek> i innych znaczników
+
+    2. menu
+    - rejon i kategoria rozwijane poziomo
+    - menu do lewej, a rozwijane do prawej jak w projekcie
+    - dodać gminy
+
+
+    4. slider
+    - miniatury pod spodem
+    
+
+

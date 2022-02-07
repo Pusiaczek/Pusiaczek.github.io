@@ -1,11 +1,15 @@
 .alertbar {
-  position: relative;
   background-color: orange;
-  padding: 0;
-  height: 2rem;
-  font-size: 1rem;
-  line-height: 1rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 400;
+  // position: relative;
+  // padding: 0;
+  // height: 2.5em;
+  cursor: default;
+
+  .container:hover .alertbar-content{
+    animation-play-state:paused !important;
+  }
 
   .container {
     .alertbar-tag {
@@ -13,27 +17,24 @@
       color: white;
       text-transform: uppercase;
       background-color: $red;
-      height: 100%;
-      width: 100px;
+      font-weight: 600;
+      padding: 5px 20px;
     }
 
     .alertbar-wrapper {
       display: block;
-      height: 100%;
       width: 100%;
+      padding: 5px 0;
       overflow: hidden;
       white-space: nowrap;
-      // background-color: green;
 
       .alertbar-content {
         display: inline-block;
         padding-left: 100%;
-        animation: marquee 25s linear infinite;
+        animation: marquee 35s linear infinite;
 
         .alertbar-text {
           position: relative;
-          height: 100%;
-          line-height: 2rem;
           padding-right: 2rem;
           padding-left: 1rem;
         }
@@ -43,7 +44,7 @@
           position: absolute;
           display: block;
           color: $red;
-          bottom: 0px;
+          bottom: -1px;
           right: 0;
         }
       }
@@ -52,6 +53,10 @@
 }
 
 @keyframes marquee {
-  0%   { transform: translate(0, 0); }
-  100% { transform: translate(-100%, 0); }
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
 }

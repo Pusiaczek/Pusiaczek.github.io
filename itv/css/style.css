@@ -9349,13 +9349,15 @@ p {
 }
 
 .alertbar {
-  position: relative;
   background-color: orange;
-  padding: 0;
-  height: 2rem;
-  font-size: 1rem;
-  line-height: 1rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 400;
+  cursor: default;
+}
+
+.alertbar .container:hover .alertbar-content {
+  -webkit-animation-play-state: paused !important;
+          animation-play-state: paused !important;
 }
 
 .alertbar .container .alertbar-tag {
@@ -9363,14 +9365,14 @@ p {
   color: white;
   text-transform: uppercase;
   background-color: #d90000;
-  height: 100%;
-  width: 100px;
+  font-weight: 600;
+  padding: 5px 20px;
 }
 
 .alertbar .container .alertbar-wrapper {
   display: block;
-  height: 100%;
   width: 100%;
+  padding: 5px 0;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -9378,14 +9380,12 @@ p {
 .alertbar .container .alertbar-wrapper .alertbar-content {
   display: inline-block;
   padding-left: 100%;
-  -webkit-animation: marquee 25s linear infinite;
-          animation: marquee 25s linear infinite;
+  -webkit-animation: marquee 35s linear infinite;
+          animation: marquee 35s linear infinite;
 }
 
 .alertbar .container .alertbar-wrapper .alertbar-content .alertbar-text {
   position: relative;
-  height: 100%;
-  line-height: 2rem;
   padding-right: 2rem;
   padding-left: 1rem;
 }
@@ -9395,7 +9395,7 @@ p {
   position: absolute;
   display: block;
   color: #d90000;
-  bottom: 0px;
+  bottom: -1px;
   right: 0;
 }
 
@@ -9750,10 +9750,22 @@ p {
   width: 100%;
   -webkit-transform: scale3d(1, 1, 1);
           transform: scale3d(1, 1, 1);
-  -webkit-transition: -webkit-transform 0.8s ease-in-out;
-  transition: -webkit-transform 0.8s ease-in-out;
-  transition: transform 0.8s ease-in-out;
-  transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-transition: -webkit-transform 0.8s ease-in-out, -webkit-filter 0.8s ease-in-out;
+  transition: -webkit-transform 0.8s ease-in-out, -webkit-filter 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, filter 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, filter 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out, -webkit-filter 0.8s ease-in-out;
+}
+
+.news-all-item .news-all-item-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(2, 0, 36, 0.6)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(2, 0, 36, 0.6) 100%);
 }
 
 .news-all-item a {
@@ -9764,7 +9776,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 200;
   pointer-events: all;
   -webkit-transition: opacity 0.2s ease-in-out;
@@ -9787,7 +9799,7 @@ p {
 }
 
 .news-all-item .news-all-item-header .news-all-category {
-  margin: 4px 0;
+  margin: 2px 0;
   font-size: 0.75rem;
 }
 
@@ -9800,6 +9812,7 @@ p {
   display: inline-block;
   position: relative;
   left: -75%;
+  max-width: 65%;
   font-size: 1rem;
   font-weight: 600;
   text-align: justify;
@@ -9813,6 +9826,8 @@ p {
 .news-all-item:hover .news-all-item-bg {
   -webkit-transform: scale3d(1.1, 1.1, 1);
           transform: scale3d(1.1, 1.1, 1);
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
 }
 
 .news-all-item:hover a {
@@ -9888,7 +9903,7 @@ footer .footer-itv-logo-wrapper a {
 }
 
 footer .footer-itv-logo-wrapper .footer-itv-logo {
-  height: 80%;
+  width: 80%;
 }
 
 footer .footer-menu {
